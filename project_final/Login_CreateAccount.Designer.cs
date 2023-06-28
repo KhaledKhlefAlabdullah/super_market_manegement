@@ -35,29 +35,34 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.title_project = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.main_Panel = new System.Windows.Forms.Panel();
             this.login_panel = new System.Windows.Forms.Panel();
-            this.title_of_lo_in_fotm = new System.Windows.Forms.Label();
+            this.title_of_login = new System.Windows.Forms.Label();
             this.panel_user_login = new System.Windows.Forms.Panel();
+            this.user_name_login_errorMessage = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.user_name_login_txt = new System.Windows.Forms.TextBox();
             this.btn_go_to_create = new System.Windows.Forms.Button();
             this.panel_password_login = new System.Windows.Forms.Panel();
+            this.password_login_errorMessage = new System.Windows.Forms.Label();
             this.password_show_login_logo = new System.Windows.Forms.PictureBox();
             this.password_login_txt = new System.Windows.Forms.TextBox();
             this.login_btn = new System.Windows.Forms.Button();
             this.create_account_panel = new System.Windows.Forms.Panel();
             this.panel_user_name_create = new System.Windows.Forms.Panel();
+            this.user_name_create_errorMessage = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.username_txt_create = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.user_name_txt_create = new System.Windows.Forms.TextBox();
+            this.login_title = new System.Windows.Forms.Label();
             this.panel_confirme_password_create = new System.Windows.Forms.Panel();
+            this.confirm_password_create_errorMessage = new System.Windows.Forms.Label();
             this.show_password_confirm_create = new System.Windows.Forms.PictureBox();
             this.confirm_password_txt_create = new System.Windows.Forms.TextBox();
             this.panel_password_create = new System.Windows.Forms.Panel();
+            this.password_create_errorMessage = new System.Windows.Forms.Label();
             this.show_password_create = new System.Windows.Forms.PictureBox();
             this.password_txt_create = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -90,7 +95,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.title_project);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -153,17 +158,17 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Design by:";
             // 
-            // label1
+            // title_project
             // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(64, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 28);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Albaraka market";
+            this.title_project.AutoSize = true;
+            this.title_project.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.title_project.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_project.ForeColor = System.Drawing.Color.White;
+            this.title_project.Location = new System.Drawing.Point(64, 162);
+            this.title_project.Name = "title_project";
+            this.title_project.Size = new System.Drawing.Size(212, 28);
+            this.title_project.TabIndex = 8;
+            this.title_project.Text = "Albaraka market";
             // 
             // panel3
             // 
@@ -195,29 +200,30 @@
             // 
             // login_panel
             // 
-            this.login_panel.Controls.Add(this.title_of_lo_in_fotm);
+            this.login_panel.Controls.Add(this.title_of_login);
             this.login_panel.Controls.Add(this.panel_user_login);
             this.login_panel.Controls.Add(this.btn_go_to_create);
             this.login_panel.Controls.Add(this.panel_password_login);
             this.login_panel.Controls.Add(this.login_btn);
-            this.login_panel.Location = new System.Drawing.Point(0, 66);
+            this.login_panel.Location = new System.Drawing.Point(0, 62);
             this.login_panel.Name = "login_panel";
             this.login_panel.Size = new System.Drawing.Size(450, 325);
             this.login_panel.TabIndex = 22;
             // 
-            // title_of_lo_in_fotm
+            // title_of_login
             // 
-            this.title_of_lo_in_fotm.AutoSize = true;
-            this.title_of_lo_in_fotm.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_of_lo_in_fotm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.title_of_lo_in_fotm.Location = new System.Drawing.Point(3, 34);
-            this.title_of_lo_in_fotm.Name = "title_of_lo_in_fotm";
-            this.title_of_lo_in_fotm.Size = new System.Drawing.Size(355, 40);
-            this.title_of_lo_in_fotm.TabIndex = 17;
-            this.title_of_lo_in_fotm.Text = "Login to your acount";
+            this.title_of_login.AutoSize = true;
+            this.title_of_login.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_of_login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.title_of_login.Location = new System.Drawing.Point(3, 34);
+            this.title_of_login.Name = "title_of_login";
+            this.title_of_login.Size = new System.Drawing.Size(355, 40);
+            this.title_of_login.TabIndex = 17;
+            this.title_of_login.Text = "Login to your acount";
             // 
             // panel_user_login
             // 
+            this.panel_user_login.Controls.Add(this.user_name_login_errorMessage);
             this.panel_user_login.Controls.Add(this.pictureBox4);
             this.panel_user_login.Controls.Add(this.user_name_login_txt);
             this.panel_user_login.Location = new System.Drawing.Point(0, 104);
@@ -225,6 +231,20 @@
             this.panel_user_login.Size = new System.Drawing.Size(450, 45);
             this.panel_user_login.TabIndex = 19;
             this.panel_user_login.Enter += new System.EventHandler(this.panel_user_login_Enter);
+            // 
+            // user_name_login_errorMessage
+            // 
+            this.user_name_login_errorMessage.AutoSize = true;
+            this.user_name_login_errorMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.user_name_login_errorMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user_name_login_errorMessage.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name_login_errorMessage.ForeColor = System.Drawing.Color.Brown;
+            this.user_name_login_errorMessage.Location = new System.Drawing.Point(45, 33);
+            this.user_name_login_errorMessage.Name = "user_name_login_errorMessage";
+            this.user_name_login_errorMessage.Size = new System.Drawing.Size(249, 16);
+            this.user_name_login_errorMessage.TabIndex = 22;
+            this.user_name_login_errorMessage.Text = "user name must be more than tow character";
+            this.user_name_login_errorMessage.Visible = false;
             // 
             // pictureBox4
             // 
@@ -241,11 +261,13 @@
             this.user_name_login_txt.BackColor = System.Drawing.SystemColors.Control;
             this.user_name_login_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.user_name_login_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_name_login_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.user_name_login_txt.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.user_name_login_txt.Location = new System.Drawing.Point(45, 11);
             this.user_name_login_txt.Name = "user_name_login_txt";
             this.user_name_login_txt.Size = new System.Drawing.Size(370, 23);
             this.user_name_login_txt.TabIndex = 1;
+            this.user_name_login_txt.Text = "user name";
+            this.user_name_login_txt.TextChanged += new System.EventHandler(this.user_name_login_txt_TextChanged);
             // 
             // btn_go_to_create
             // 
@@ -264,6 +286,7 @@
             // 
             // panel_password_login
             // 
+            this.panel_password_login.Controls.Add(this.password_login_errorMessage);
             this.panel_password_login.Controls.Add(this.password_show_login_logo);
             this.panel_password_login.Controls.Add(this.password_login_txt);
             this.panel_password_login.Location = new System.Drawing.Point(0, 152);
@@ -271,6 +294,20 @@
             this.panel_password_login.Size = new System.Drawing.Size(450, 45);
             this.panel_password_login.TabIndex = 20;
             this.panel_password_login.Enter += new System.EventHandler(this.panel_password_login_Enter);
+            // 
+            // password_login_errorMessage
+            // 
+            this.password_login_errorMessage.AutoSize = true;
+            this.password_login_errorMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.password_login_errorMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.password_login_errorMessage.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_login_errorMessage.ForeColor = System.Drawing.Color.Brown;
+            this.password_login_errorMessage.Location = new System.Drawing.Point(43, 33);
+            this.password_login_errorMessage.Name = "password_login_errorMessage";
+            this.password_login_errorMessage.Size = new System.Drawing.Size(280, 16);
+            this.password_login_errorMessage.TabIndex = 23;
+            this.password_login_errorMessage.Text = "password incorrect must be more than 7 character";
+            this.password_login_errorMessage.Visible = false;
             // 
             // password_show_login_logo
             // 
@@ -288,12 +325,13 @@
             this.password_login_txt.BackColor = System.Drawing.SystemColors.Control;
             this.password_login_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password_login_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_login_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.password_login_txt.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.password_login_txt.Location = new System.Drawing.Point(45, 11);
             this.password_login_txt.Name = "password_login_txt";
             this.password_login_txt.Size = new System.Drawing.Size(370, 23);
             this.password_login_txt.TabIndex = 5;
-            this.password_login_txt.UseSystemPasswordChar = true;
+            this.password_login_txt.Text = "password";
+            this.password_login_txt.TextChanged += new System.EventHandler(this.password_login_txt_TextChanged);
             // 
             // login_btn
             // 
@@ -307,11 +345,12 @@
             this.login_btn.TabIndex = 18;
             this.login_btn.Text = "Login";
             this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
             // 
             // create_account_panel
             // 
             this.create_account_panel.Controls.Add(this.panel_user_name_create);
-            this.create_account_panel.Controls.Add(this.label7);
+            this.create_account_panel.Controls.Add(this.login_title);
             this.create_account_panel.Controls.Add(this.panel_confirme_password_create);
             this.create_account_panel.Controls.Add(this.panel_password_create);
             this.create_account_panel.Controls.Add(this.label6);
@@ -325,13 +364,28 @@
             // 
             // panel_user_name_create
             // 
+            this.panel_user_name_create.Controls.Add(this.user_name_create_errorMessage);
             this.panel_user_name_create.Controls.Add(this.pictureBox6);
-            this.panel_user_name_create.Controls.Add(this.username_txt_create);
+            this.panel_user_name_create.Controls.Add(this.user_name_txt_create);
             this.panel_user_name_create.Location = new System.Drawing.Point(0, 68);
             this.panel_user_name_create.Name = "panel_user_name_create";
             this.panel_user_name_create.Size = new System.Drawing.Size(450, 45);
             this.panel_user_name_create.TabIndex = 23;
             this.panel_user_name_create.Enter += new System.EventHandler(this.panel_user_name_create_Enter);
+            // 
+            // user_name_create_errorMessage
+            // 
+            this.user_name_create_errorMessage.AutoSize = true;
+            this.user_name_create_errorMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.user_name_create_errorMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.user_name_create_errorMessage.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name_create_errorMessage.ForeColor = System.Drawing.Color.Brown;
+            this.user_name_create_errorMessage.Location = new System.Drawing.Point(42, 33);
+            this.user_name_create_errorMessage.Name = "user_name_create_errorMessage";
+            this.user_name_create_errorMessage.Size = new System.Drawing.Size(249, 16);
+            this.user_name_create_errorMessage.TabIndex = 23;
+            this.user_name_create_errorMessage.Text = "user name must be more than tow character";
+            this.user_name_create_errorMessage.Visible = false;
             // 
             // pictureBox6
             // 
@@ -343,30 +397,33 @@
             this.pictureBox6.TabIndex = 8;
             this.pictureBox6.TabStop = false;
             // 
-            // username_txt_create
+            // user_name_txt_create
             // 
-            this.username_txt_create.BackColor = System.Drawing.SystemColors.Control;
-            this.username_txt_create.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.username_txt_create.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username_txt_create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.username_txt_create.Location = new System.Drawing.Point(45, 11);
-            this.username_txt_create.Name = "username_txt_create";
-            this.username_txt_create.Size = new System.Drawing.Size(370, 23);
-            this.username_txt_create.TabIndex = 1;
+            this.user_name_txt_create.BackColor = System.Drawing.SystemColors.Control;
+            this.user_name_txt_create.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.user_name_txt_create.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_name_txt_create.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.user_name_txt_create.Location = new System.Drawing.Point(45, 11);
+            this.user_name_txt_create.Name = "user_name_txt_create";
+            this.user_name_txt_create.Size = new System.Drawing.Size(370, 23);
+            this.user_name_txt_create.TabIndex = 1;
+            this.user_name_txt_create.Text = "user name";
+            this.user_name_txt_create.TextChanged += new System.EventHandler(this.user_name_txt_create_TextChanged);
             // 
-            // label7
+            // login_title
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label7.Location = new System.Drawing.Point(6, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(336, 40);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Create new acount";
+            this.login_title.AutoSize = true;
+            this.login_title.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login_title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.login_title.Location = new System.Drawing.Point(6, 0);
+            this.login_title.Name = "login_title";
+            this.login_title.Size = new System.Drawing.Size(336, 40);
+            this.login_title.TabIndex = 21;
+            this.login_title.Text = "Create new acount";
             // 
             // panel_confirme_password_create
             // 
+            this.panel_confirme_password_create.Controls.Add(this.confirm_password_create_errorMessage);
             this.panel_confirme_password_create.Controls.Add(this.show_password_confirm_create);
             this.panel_confirme_password_create.Controls.Add(this.confirm_password_txt_create);
             this.panel_confirme_password_create.Location = new System.Drawing.Point(0, 170);
@@ -374,6 +431,20 @@
             this.panel_confirme_password_create.Size = new System.Drawing.Size(450, 45);
             this.panel_confirme_password_create.TabIndex = 26;
             this.panel_confirme_password_create.Enter += new System.EventHandler(this.panel_confirme_password_create_Enter);
+            // 
+            // confirm_password_create_errorMessage
+            // 
+            this.confirm_password_create_errorMessage.AutoSize = true;
+            this.confirm_password_create_errorMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.confirm_password_create_errorMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.confirm_password_create_errorMessage.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirm_password_create_errorMessage.ForeColor = System.Drawing.Color.Brown;
+            this.confirm_password_create_errorMessage.Location = new System.Drawing.Point(42, 32);
+            this.confirm_password_create_errorMessage.Name = "confirm_password_create_errorMessage";
+            this.confirm_password_create_errorMessage.Size = new System.Drawing.Size(280, 16);
+            this.confirm_password_create_errorMessage.TabIndex = 25;
+            this.confirm_password_create_errorMessage.Text = "confirm password not mutch must be like password";
+            this.confirm_password_create_errorMessage.Visible = false;
             // 
             // show_password_confirm_create
             // 
@@ -391,15 +462,17 @@
             this.confirm_password_txt_create.BackColor = System.Drawing.SystemColors.Control;
             this.confirm_password_txt_create.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.confirm_password_txt_create.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm_password_txt_create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.confirm_password_txt_create.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.confirm_password_txt_create.Location = new System.Drawing.Point(45, 11);
             this.confirm_password_txt_create.Name = "confirm_password_txt_create";
             this.confirm_password_txt_create.Size = new System.Drawing.Size(370, 23);
             this.confirm_password_txt_create.TabIndex = 5;
-            this.confirm_password_txt_create.UseSystemPasswordChar = true;
+            this.confirm_password_txt_create.Text = "confirm password";
+            this.confirm_password_txt_create.TextChanged += new System.EventHandler(this.confirm_password_txt_create_TextChanged);
             // 
             // panel_password_create
             // 
+            this.panel_password_create.Controls.Add(this.password_create_errorMessage);
             this.panel_password_create.Controls.Add(this.show_password_create);
             this.panel_password_create.Controls.Add(this.password_txt_create);
             this.panel_password_create.Location = new System.Drawing.Point(0, 119);
@@ -407,6 +480,20 @@
             this.panel_password_create.Size = new System.Drawing.Size(450, 45);
             this.panel_password_create.TabIndex = 24;
             this.panel_password_create.Enter += new System.EventHandler(this.panel_password_create_Enter);
+            // 
+            // password_create_errorMessage
+            // 
+            this.password_create_errorMessage.AutoSize = true;
+            this.password_create_errorMessage.BackColor = System.Drawing.SystemColors.Control;
+            this.password_create_errorMessage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.password_create_errorMessage.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_create_errorMessage.ForeColor = System.Drawing.Color.Brown;
+            this.password_create_errorMessage.Location = new System.Drawing.Point(42, 33);
+            this.password_create_errorMessage.Name = "password_create_errorMessage";
+            this.password_create_errorMessage.Size = new System.Drawing.Size(280, 16);
+            this.password_create_errorMessage.TabIndex = 24;
+            this.password_create_errorMessage.Text = "password incorrect must be more than 7 character";
+            this.password_create_errorMessage.Visible = false;
             // 
             // show_password_create
             // 
@@ -424,12 +511,13 @@
             this.password_txt_create.BackColor = System.Drawing.SystemColors.Control;
             this.password_txt_create.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password_txt_create.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_txt_create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.password_txt_create.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.password_txt_create.Location = new System.Drawing.Point(45, 11);
             this.password_txt_create.Name = "password_txt_create";
             this.password_txt_create.Size = new System.Drawing.Size(370, 23);
             this.password_txt_create.TabIndex = 5;
-            this.password_txt_create.UseSystemPasswordChar = true;
+            this.password_txt_create.Text = "password";
+            this.password_txt_create.TextChanged += new System.EventHandler(this.password_txt_create_TextChanged);
             // 
             // label6
             // 
@@ -469,6 +557,7 @@
             this.btn_create_and_login.TabIndex = 22;
             this.btn_create_and_login.Text = "Create Account";
             this.btn_create_and_login.UseVisualStyleBackColor = false;
+            this.btn_create_and_login.Click += new System.EventHandler(this.btn_create_and_login_Click);
             // 
             // exit_login_btn
             // 
@@ -493,9 +582,10 @@
             this.Controls.Add(this.main_Panel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login_CreateAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "login_create_account";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -532,13 +622,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label title_project;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel main_Panel;
         public System.Windows.Forms.Button exit_login_btn;
         private System.Windows.Forms.Panel create_account_panel;
-        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label login_title;
         public System.Windows.Forms.Panel panel_confirme_password_create;
         public System.Windows.Forms.PictureBox show_password_confirm_create;
         public System.Windows.Forms.TextBox confirm_password_txt_create;
@@ -549,10 +639,9 @@
         public System.Windows.Forms.Button btn_login_from_create;
         public System.Windows.Forms.Button btn_create_and_login;
         public System.Windows.Forms.Panel panel_user_name_create;
-        public System.Windows.Forms.PictureBox pictureBox6;
-        public System.Windows.Forms.TextBox username_txt_create;
+        public System.Windows.Forms.TextBox user_name_txt_create;
         private System.Windows.Forms.Panel login_panel;
-        public System.Windows.Forms.Label title_of_lo_in_fotm;
+        public System.Windows.Forms.Label title_of_login;
         public System.Windows.Forms.Panel panel_user_login;
         public System.Windows.Forms.PictureBox pictureBox4;
         public System.Windows.Forms.TextBox user_name_login_txt;
@@ -561,6 +650,12 @@
         public System.Windows.Forms.PictureBox password_show_login_logo;
         public System.Windows.Forms.TextBox password_login_txt;
         public System.Windows.Forms.Button login_btn;
+        public System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label user_name_login_errorMessage;
+        private System.Windows.Forms.Label password_login_errorMessage;
+        private System.Windows.Forms.Label user_name_create_errorMessage;
+        private System.Windows.Forms.Label confirm_password_create_errorMessage;
+        private System.Windows.Forms.Label password_create_errorMessage;
     }
 }
 
