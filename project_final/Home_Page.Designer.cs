@@ -29,95 +29,135 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Page));
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panel_button_side = new System.Windows.Forms.Panel();
             this.panel_home_buttons = new System.Windows.Forms.Panel();
             this.changePassword = new System.Windows.Forms.Label();
-            this.procurement = new System.Windows.Forms.Label();
+            this.bills = new System.Windows.Forms.Label();
             this.Sales = new System.Windows.Forms.Label();
             this.store = new System.Windows.Forms.Label();
-            this.login_panel = new System.Windows.Forms.Panel();
-            this.title_of_lo_in_fotm = new System.Windows.Forms.Label();
-            this.panel_user_login = new System.Windows.Forms.Panel();
-            this.user_name_login_txt = new System.Windows.Forms.TextBox();
-            this.btn_go_to_create = new System.Windows.Forms.Button();
-            this.panel_password_login = new System.Windows.Forms.Panel();
-            this.password_login_txt = new System.Windows.Forms.TextBox();
-            this.login_btn = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.go_to_bills_btn = new System.Windows.Forms.PictureBox();
+            this.go_to_changePassword_btn = new System.Windows.Forms.PictureBox();
+            this.go_to_store_btn = new System.Windows.Forms.PictureBox();
+            this.go_to_sales_btn = new System.Windows.Forms.PictureBox();
+            this.pictureBox_copy_writes = new System.Windows.Forms.PictureBox();
+            this.copy_write_lbl = new System.Windows.Forms.Label();
+            this.title_of_app = new System.Windows.Forms.Label();
+            this.pictureBox_app_logo = new System.Windows.Forms.PictureBox();
+            this.panel_data_grid_view_side = new System.Windows.Forms.Panel();
+            this.panel_bills_data = new System.Windows.Forms.Panel();
+            this.bills_dataGridView = new System.Windows.Forms.DataGridView();
+            this.name_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quintity_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discount_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfSale_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_sales_data = new System.Windows.Forms.Panel();
+            this.panel_buttons_sales_data = new System.Windows.Forms.Panel();
+            this.date_of_sales_lbl = new System.Windows.Forms.Label();
+            this.datebill = new System.Windows.Forms.Label();
+            this.add_to_sales_data_btn = new System.Windows.Forms.Button();
+            this.totale_price_lbl = new System.Windows.Forms.Label();
+            this.updata_sales_data_btn = new System.Windows.Forms.Button();
+            this.totalePrice_lbl = new System.Windows.Forms.Label();
+            this.delete_sales_data_btn = new System.Windows.Forms.Button();
+            this.sales_dataGridView = new System.Windows.Forms.DataGridView();
+            this.name_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quintity_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discount_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfSale_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel_store_data = new System.Windows.Forms.Panel();
+            this.panel_buttons_store_data = new System.Windows.Forms.Panel();
+            this.add_to_store_data_btn = new System.Windows.Forms.Button();
+            this.updata_store_data_btn = new System.Windows.Forms.Button();
+            this.delete_store_data_btn = new System.Windows.Forms.Button();
+            this.store_dataGridView = new System.Windows.Forms.DataGridView();
+            this.go_back_home = new System.Windows.Forms.Button();
             this.panel_changePassword = new System.Windows.Forms.Panel();
             this.confiram_new_password_message = new System.Windows.Forms.Label();
             this.old_password_message = new System.Windows.Forms.Label();
             this.panel_old_password = new System.Windows.Forms.Panel();
+            this.old_password_show = new System.Windows.Forms.PictureBox();
             this.old_password_txt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel_confirme_new_password = new System.Windows.Forms.Panel();
+            this.confirm_new_password_show = new System.Windows.Forms.PictureBox();
             this.new_password_message = new System.Windows.Forms.Label();
             this.confirm_new_password_txt = new System.Windows.Forms.TextBox();
             this.panel_new_password = new System.Windows.Forms.Panel();
+            this.new_password_show = new System.Windows.Forms.PictureBox();
             this.new_password_txt = new System.Windows.Forms.TextBox();
             this.changePassword_btn = new System.Windows.Forms.Button();
             this.exit_home_btn = new System.Windows.Forms.Button();
-            this.old_password_show = new System.Windows.Forms.PictureBox();
-            this.confirm_new_password_show = new System.Windows.Forms.PictureBox();
-            this.new_password_show = new System.Windows.Forms.PictureBox();
-            this.go_to_procurement_btn = new System.Windows.Forms.PictureBox();
-            this.go_to_changePassword_btn = new System.Windows.Forms.PictureBox();
-            this.go_to_store_btn = new System.Windows.Forms.PictureBox();
-            this.go_to_sales_btn = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.password_show_login_logo = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.go_back_home = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.id_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quintity_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sales_price_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.profit_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfPruchase_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userName_store = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.bill_store = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.panel_button_side.SuspendLayout();
             this.panel_home_buttons.SuspendLayout();
-            this.login_panel.SuspendLayout();
-            this.panel_user_login.SuspendLayout();
-            this.panel_password_login.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel_changePassword.SuspendLayout();
-            this.panel_old_password.SuspendLayout();
-            this.panel_confirme_new_password.SuspendLayout();
-            this.panel_new_password.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.old_password_show)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.confirm_new_password_show)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.new_password_show)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.go_to_procurement_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.go_to_bills_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_to_changePassword_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_to_store_btn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_to_sales_btn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.password_show_login_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_copy_writes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_app_logo)).BeginInit();
+            this.panel_data_grid_view_side.SuspendLayout();
+            this.panel_bills_data.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bills_dataGridView)).BeginInit();
+            this.panel_sales_data.SuspendLayout();
+            this.panel_buttons_sales_data.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_dataGridView)).BeginInit();
+            this.panel_store_data.SuspendLayout();
+            this.panel_buttons_store_data.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.store_dataGridView)).BeginInit();
+            this.panel_changePassword.SuspendLayout();
+            this.panel_old_password.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.old_password_show)).BeginInit();
+            this.panel_confirme_new_password.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.confirm_new_password_show)).BeginInit();
+            this.panel_new_password.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.new_password_show)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panel_button_side
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.panel1.Controls.Add(this.panel_home_buttons);
-            this.panel1.Controls.Add(this.login_panel);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(300, 530);
-            this.panel1.TabIndex = 1;
+            this.panel_button_side.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel_button_side.Controls.Add(this.panel_home_buttons);
+            this.panel_button_side.Controls.Add(this.pictureBox_copy_writes);
+            this.panel_button_side.Controls.Add(this.copy_write_lbl);
+            this.panel_button_side.Controls.Add(this.title_of_app);
+            this.panel_button_side.Controls.Add(this.pictureBox_app_logo);
+            this.panel_button_side.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel_button_side.Location = new System.Drawing.Point(0, 0);
+            this.panel_button_side.Name = "panel_button_side";
+            this.panel_button_side.Size = new System.Drawing.Size(300, 530);
+            this.panel_button_side.TabIndex = 1;
             // 
             // panel_home_buttons
             // 
             this.panel_home_buttons.Controls.Add(this.changePassword);
-            this.panel_home_buttons.Controls.Add(this.procurement);
+            this.panel_home_buttons.Controls.Add(this.bills);
             this.panel_home_buttons.Controls.Add(this.Sales);
             this.panel_home_buttons.Controls.Add(this.store);
-            this.panel_home_buttons.Controls.Add(this.go_to_procurement_btn);
+            this.panel_home_buttons.Controls.Add(this.go_to_bills_btn);
             this.panel_home_buttons.Controls.Add(this.go_to_changePassword_btn);
             this.panel_home_buttons.Controls.Add(this.go_to_store_btn);
             this.panel_home_buttons.Controls.Add(this.go_to_sales_btn);
@@ -138,18 +178,18 @@
             this.changePassword.TabIndex = 35;
             this.changePassword.Text = "Password";
             // 
-            // procurement
+            // bills
             // 
-            this.procurement.AutoSize = true;
-            this.procurement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.procurement.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.procurement.ForeColor = System.Drawing.Color.White;
-            this.procurement.Location = new System.Drawing.Point(142, 207);
-            this.procurement.Name = "procurement";
-            this.procurement.Size = new System.Drawing.Size(76, 15);
-            this.procurement.TabIndex = 34;
-            this.procurement.Text = "Procurement";
-            this.procurement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bills.AutoSize = true;
+            this.bills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bills.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bills.ForeColor = System.Drawing.Color.White;
+            this.bills.Location = new System.Drawing.Point(168, 207);
+            this.bills.Name = "bills";
+            this.bills.Size = new System.Drawing.Size(28, 15);
+            this.bills.TabIndex = 34;
+            this.bills.Text = "Bills";
+            this.bills.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Sales
             // 
@@ -175,137 +215,526 @@
             this.store.TabIndex = 32;
             this.store.Text = "Store";
             // 
-            // login_panel
+            // go_to_bills_btn
             // 
-            this.login_panel.Controls.Add(this.title_of_lo_in_fotm);
-            this.login_panel.Controls.Add(this.panel_user_login);
-            this.login_panel.Controls.Add(this.btn_go_to_create);
-            this.login_panel.Controls.Add(this.panel_password_login);
-            this.login_panel.Controls.Add(this.login_btn);
-            this.login_panel.Location = new System.Drawing.Point(299, 72);
-            this.login_panel.Name = "login_panel";
-            this.login_panel.Size = new System.Drawing.Size(450, 325);
-            this.login_panel.TabIndex = 23;
+            this.go_to_bills_btn.Image = global::project_final.Properties.Resources.procurement;
+            this.go_to_bills_btn.Location = new System.Drawing.Point(143, 129);
+            this.go_to_bills_btn.Name = "go_to_bills_btn";
+            this.go_to_bills_btn.Size = new System.Drawing.Size(75, 75);
+            this.go_to_bills_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.go_to_bills_btn.TabIndex = 31;
+            this.go_to_bills_btn.TabStop = false;
+            this.go_to_bills_btn.Click += new System.EventHandler(this.go_to_bills_btn_Click);
             // 
-            // title_of_lo_in_fotm
+            // go_to_changePassword_btn
             // 
-            this.title_of_lo_in_fotm.AutoSize = true;
-            this.title_of_lo_in_fotm.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title_of_lo_in_fotm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.title_of_lo_in_fotm.Location = new System.Drawing.Point(3, 34);
-            this.title_of_lo_in_fotm.Name = "title_of_lo_in_fotm";
-            this.title_of_lo_in_fotm.Size = new System.Drawing.Size(355, 40);
-            this.title_of_lo_in_fotm.TabIndex = 17;
-            this.title_of_lo_in_fotm.Text = "Login to your acount";
+            this.go_to_changePassword_btn.Image = global::project_final.Properties.Resources.change_password;
+            this.go_to_changePassword_btn.Location = new System.Drawing.Point(62, 129);
+            this.go_to_changePassword_btn.Name = "go_to_changePassword_btn";
+            this.go_to_changePassword_btn.Size = new System.Drawing.Size(75, 75);
+            this.go_to_changePassword_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.go_to_changePassword_btn.TabIndex = 30;
+            this.go_to_changePassword_btn.TabStop = false;
+            this.go_to_changePassword_btn.Click += new System.EventHandler(this.go_to_changePassword_btn_Click);
             // 
-            // panel_user_login
+            // go_to_store_btn
             // 
-            this.panel_user_login.Controls.Add(this.pictureBox4);
-            this.panel_user_login.Controls.Add(this.user_name_login_txt);
-            this.panel_user_login.Location = new System.Drawing.Point(0, 104);
-            this.panel_user_login.Name = "panel_user_login";
-            this.panel_user_login.Size = new System.Drawing.Size(450, 45);
-            this.panel_user_login.TabIndex = 19;
+            this.go_to_store_btn.Image = global::project_final.Properties.Resources.store;
+            this.go_to_store_btn.Location = new System.Drawing.Point(62, 28);
+            this.go_to_store_btn.Name = "go_to_store_btn";
+            this.go_to_store_btn.Size = new System.Drawing.Size(75, 75);
+            this.go_to_store_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.go_to_store_btn.TabIndex = 29;
+            this.go_to_store_btn.TabStop = false;
+            this.go_to_store_btn.Click += new System.EventHandler(this.go_to_store_btn_Click);
             // 
-            // user_name_login_txt
+            // go_to_sales_btn
             // 
-            this.user_name_login_txt.BackColor = System.Drawing.SystemColors.Control;
-            this.user_name_login_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.user_name_login_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_name_login_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.user_name_login_txt.Location = new System.Drawing.Point(45, 11);
-            this.user_name_login_txt.Name = "user_name_login_txt";
-            this.user_name_login_txt.Size = new System.Drawing.Size(370, 23);
-            this.user_name_login_txt.TabIndex = 1;
+            this.go_to_sales_btn.Image = global::project_final.Properties.Resources.sale;
+            this.go_to_sales_btn.Location = new System.Drawing.Point(143, 28);
+            this.go_to_sales_btn.Name = "go_to_sales_btn";
+            this.go_to_sales_btn.Size = new System.Drawing.Size(75, 75);
+            this.go_to_sales_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.go_to_sales_btn.TabIndex = 28;
+            this.go_to_sales_btn.TabStop = false;
+            this.go_to_sales_btn.Click += new System.EventHandler(this.go_to_sales_btn_Click);
             // 
-            // btn_go_to_create
+            // pictureBox_copy_writes
             // 
-            this.btn_go_to_create.BackColor = System.Drawing.SystemColors.Control;
-            this.btn_go_to_create.FlatAppearance.BorderSize = 0;
-            this.btn_go_to_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_go_to_create.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_go_to_create.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btn_go_to_create.Location = new System.Drawing.Point(167, 254);
-            this.btn_go_to_create.Name = "btn_go_to_create";
-            this.btn_go_to_create.Size = new System.Drawing.Size(148, 35);
-            this.btn_go_to_create.TabIndex = 21;
-            this.btn_go_to_create.Text = "Create Account";
-            this.btn_go_to_create.UseVisualStyleBackColor = false;
+            this.pictureBox_copy_writes.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_copy_writes.Image")));
+            this.pictureBox_copy_writes.Location = new System.Drawing.Point(191, 433);
+            this.pictureBox_copy_writes.Name = "pictureBox_copy_writes";
+            this.pictureBox_copy_writes.Size = new System.Drawing.Size(11, 11);
+            this.pictureBox_copy_writes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_copy_writes.TabIndex = 13;
+            this.pictureBox_copy_writes.TabStop = false;
             // 
-            // panel_password_login
+            // copy_write_lbl
             // 
-            this.panel_password_login.Controls.Add(this.password_show_login_logo);
-            this.panel_password_login.Controls.Add(this.password_login_txt);
-            this.panel_password_login.Location = new System.Drawing.Point(0, 152);
-            this.panel_password_login.Name = "panel_password_login";
-            this.panel_password_login.Size = new System.Drawing.Size(450, 45);
-            this.panel_password_login.TabIndex = 20;
+            this.copy_write_lbl.AutoSize = true;
+            this.copy_write_lbl.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.copy_write_lbl.ForeColor = System.Drawing.Color.White;
+            this.copy_write_lbl.Location = new System.Drawing.Point(101, 432);
+            this.copy_write_lbl.Name = "copy_write_lbl";
+            this.copy_write_lbl.Size = new System.Drawing.Size(92, 12);
+            this.copy_write_lbl.TabIndex = 12;
+            this.copy_write_lbl.Text = "All copy write is saved ";
             // 
-            // password_login_txt
+            // title_of_app
             // 
-            this.password_login_txt.BackColor = System.Drawing.SystemColors.Control;
-            this.password_login_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.password_login_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password_login_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.password_login_txt.Location = new System.Drawing.Point(45, 11);
-            this.password_login_txt.Name = "password_login_txt";
-            this.password_login_txt.Size = new System.Drawing.Size(370, 23);
-            this.password_login_txt.TabIndex = 5;
-            this.password_login_txt.UseSystemPasswordChar = true;
+            this.title_of_app.AutoSize = true;
+            this.title_of_app.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.title_of_app.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title_of_app.ForeColor = System.Drawing.Color.White;
+            this.title_of_app.Location = new System.Drawing.Point(64, 162);
+            this.title_of_app.Name = "title_of_app";
+            this.title_of_app.Size = new System.Drawing.Size(212, 28);
+            this.title_of_app.TabIndex = 8;
+            this.title_of_app.Text = "Albaraka market";
             // 
-            // login_btn
+            // pictureBox_app_logo
             // 
-            this.login_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.login_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.login_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.login_btn.Location = new System.Drawing.Point(13, 254);
-            this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(148, 35);
-            this.login_btn.TabIndex = 18;
-            this.login_btn.Text = "Login";
-            this.login_btn.UseVisualStyleBackColor = false;
+            this.pictureBox_app_logo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_app_logo.Image")));
+            this.pictureBox_app_logo.Location = new System.Drawing.Point(70, 39);
+            this.pictureBox_app_logo.Name = "pictureBox_app_logo";
+            this.pictureBox_app_logo.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox_app_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_app_logo.TabIndex = 0;
+            this.pictureBox_app_logo.TabStop = false;
             // 
-            // label5
+            // panel_data_grid_view_side
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(101, 432);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 12);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "All copy write is saved ";
+            this.panel_data_grid_view_side.Controls.Add(this.panel_bills_data);
+            this.panel_data_grid_view_side.Controls.Add(this.panel_sales_data);
+            this.panel_data_grid_view_side.Controls.Add(this.panel_store_data);
+            this.panel_data_grid_view_side.Controls.Add(this.go_back_home);
+            this.panel_data_grid_view_side.Controls.Add(this.panel_changePassword);
+            this.panel_data_grid_view_side.Controls.Add(this.exit_home_btn);
+            this.panel_data_grid_view_side.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_data_grid_view_side.Location = new System.Drawing.Point(300, 0);
+            this.panel_data_grid_view_side.Name = "panel_data_grid_view_side";
+            this.panel_data_grid_view_side.Size = new System.Drawing.Size(450, 530);
+            this.panel_data_grid_view_side.TabIndex = 2;
             // 
-            // label1
+            // panel_bills_data
             // 
-            this.label1.AutoSize = true;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(64, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 28);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Albaraka market";
+            this.panel_bills_data.Controls.Add(this.bills_dataGridView);
+            this.panel_bills_data.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_bills_data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel_bills_data.Location = new System.Drawing.Point(0, 48);
+            this.panel_bills_data.Name = "panel_bills_data";
+            this.panel_bills_data.Size = new System.Drawing.Size(450, 450);
+            this.panel_bills_data.TabIndex = 31;
+            this.panel_bills_data.Visible = false;
             // 
-            // panel3
+            // bills_dataGridView
             // 
-            this.panel3.Location = new System.Drawing.Point(299, 157);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 45);
-            this.panel3.TabIndex = 7;
+            this.bills_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.bills_dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.bills_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bills_dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.bills_dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bills_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.bills_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bills_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name_bill,
+            this.quintity_bill,
+            this.price_bill,
+            this.discount_bill,
+            this.dateOfSale_bill});
+            this.bills_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bills_dataGridView.DefaultCellStyle = dataGridViewCellStyle18;
+            this.bills_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bills_dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.bills_dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.bills_dataGridView.Name = "bills_dataGridView";
+            this.bills_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bills_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.bills_dataGridView.RowHeadersWidth = 10;
+            this.bills_dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.bills_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            this.bills_dataGridView.Size = new System.Drawing.Size(450, 450);
+            this.bills_dataGridView.TabIndex = 0;
             // 
-            // panel2
+            // name_bill
             // 
-            this.panel2.Controls.Add(this.go_back_home);
-            this.panel2.Controls.Add(this.panel_changePassword);
-            this.panel2.Controls.Add(this.exit_home_btn);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(300, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(450, 530);
-            this.panel2.TabIndex = 2;
+            this.name_bill.HeaderText = "name";
+            this.name_bill.Name = "name_bill";
+            this.name_bill.Width = 64;
+            // 
+            // quintity_bill
+            // 
+            this.quintity_bill.HeaderText = "quintity";
+            this.quintity_bill.Name = "quintity_bill";
+            this.quintity_bill.Width = 72;
+            // 
+            // price_bill
+            // 
+            this.price_bill.HeaderText = "price";
+            this.price_bill.Name = "price_bill";
+            this.price_bill.Width = 59;
+            // 
+            // discount_bill
+            // 
+            this.discount_bill.HeaderText = "discount";
+            this.discount_bill.Name = "discount_bill";
+            this.discount_bill.Width = 78;
+            // 
+            // dateOfSale_bill
+            // 
+            this.dateOfSale_bill.HeaderText = "date of sale";
+            this.dateOfSale_bill.Name = "dateOfSale_bill";
+            this.dateOfSale_bill.Width = 96;
+            // 
+            // panel_sales_data
+            // 
+            this.panel_sales_data.Controls.Add(this.panel_buttons_sales_data);
+            this.panel_sales_data.Controls.Add(this.sales_dataGridView);
+            this.panel_sales_data.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_sales_data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel_sales_data.Location = new System.Drawing.Point(0, 48);
+            this.panel_sales_data.Name = "panel_sales_data";
+            this.panel_sales_data.Size = new System.Drawing.Size(450, 434);
+            this.panel_sales_data.TabIndex = 27;
+            this.panel_sales_data.Visible = false;
+            // 
+            // panel_buttons_sales_data
+            // 
+            this.panel_buttons_sales_data.Controls.Add(this.date_of_sales_lbl);
+            this.panel_buttons_sales_data.Controls.Add(this.datebill);
+            this.panel_buttons_sales_data.Controls.Add(this.add_to_sales_data_btn);
+            this.panel_buttons_sales_data.Controls.Add(this.totale_price_lbl);
+            this.panel_buttons_sales_data.Controls.Add(this.updata_sales_data_btn);
+            this.panel_buttons_sales_data.Controls.Add(this.totalePrice_lbl);
+            this.panel_buttons_sales_data.Controls.Add(this.delete_sales_data_btn);
+            this.panel_buttons_sales_data.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_buttons_sales_data.Location = new System.Drawing.Point(0, 366);
+            this.panel_buttons_sales_data.Name = "panel_buttons_sales_data";
+            this.panel_buttons_sales_data.Size = new System.Drawing.Size(450, 68);
+            this.panel_buttons_sales_data.TabIndex = 1;
+            // 
+            // date_of_sales_lbl
+            // 
+            this.date_of_sales_lbl.AutoSize = true;
+            this.date_of_sales_lbl.BackColor = System.Drawing.SystemColors.Control;
+            this.date_of_sales_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_of_sales_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.date_of_sales_lbl.Location = new System.Drawing.Point(339, 47);
+            this.date_of_sales_lbl.Name = "date_of_sales_lbl";
+            this.date_of_sales_lbl.Size = new System.Drawing.Size(0, 19);
+            this.date_of_sales_lbl.TabIndex = 39;
+            // 
+            // datebill
+            // 
+            this.datebill.AutoSize = true;
+            this.datebill.BackColor = System.Drawing.SystemColors.Control;
+            this.datebill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datebill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.datebill.Location = new System.Drawing.Point(242, 47);
+            this.datebill.Name = "datebill";
+            this.datebill.Size = new System.Drawing.Size(94, 19);
+            this.datebill.TabIndex = 38;
+            this.datebill.Text = "date of bill:";
+            // 
+            // add_to_sales_data_btn
+            // 
+            this.add_to_sales_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.add_to_sales_data_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_to_sales_data_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_to_sales_data_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_to_sales_data_btn.Location = new System.Drawing.Point(3, 0);
+            this.add_to_sales_data_btn.Name = "add_to_sales_data_btn";
+            this.add_to_sales_data_btn.Size = new System.Drawing.Size(145, 35);
+            this.add_to_sales_data_btn.TabIndex = 25;
+            this.add_to_sales_data_btn.Text = "Add";
+            this.add_to_sales_data_btn.UseVisualStyleBackColor = false;
+            // 
+            // totale_price_lbl
+            // 
+            this.totale_price_lbl.AutoSize = true;
+            this.totale_price_lbl.BackColor = System.Drawing.SystemColors.Control;
+            this.totale_price_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totale_price_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.totale_price_lbl.Location = new System.Drawing.Point(110, 47);
+            this.totale_price_lbl.Name = "totale_price_lbl";
+            this.totale_price_lbl.Size = new System.Drawing.Size(0, 19);
+            this.totale_price_lbl.TabIndex = 37;
+            // 
+            // updata_sales_data_btn
+            // 
+            this.updata_sales_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.updata_sales_data_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updata_sales_data_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updata_sales_data_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.updata_sales_data_btn.Location = new System.Drawing.Point(154, 0);
+            this.updata_sales_data_btn.Name = "updata_sales_data_btn";
+            this.updata_sales_data_btn.Size = new System.Drawing.Size(145, 35);
+            this.updata_sales_data_btn.TabIndex = 24;
+            this.updata_sales_data_btn.Text = "Update";
+            this.updata_sales_data_btn.UseVisualStyleBackColor = false;
+            // 
+            // totalePrice_lbl
+            // 
+            this.totalePrice_lbl.AutoSize = true;
+            this.totalePrice_lbl.BackColor = System.Drawing.SystemColors.Control;
+            this.totalePrice_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalePrice_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.totalePrice_lbl.Location = new System.Drawing.Point(10, 47);
+            this.totalePrice_lbl.Name = "totalePrice_lbl";
+            this.totalePrice_lbl.Size = new System.Drawing.Size(103, 19);
+            this.totalePrice_lbl.TabIndex = 36;
+            this.totalePrice_lbl.Text = "Totale price:";
+            // 
+            // delete_sales_data_btn
+            // 
+            this.delete_sales_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.delete_sales_data_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_sales_data_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_sales_data_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.delete_sales_data_btn.Location = new System.Drawing.Point(302, 0);
+            this.delete_sales_data_btn.Name = "delete_sales_data_btn";
+            this.delete_sales_data_btn.Size = new System.Drawing.Size(145, 35);
+            this.delete_sales_data_btn.TabIndex = 23;
+            this.delete_sales_data_btn.Text = "Delete";
+            this.delete_sales_data_btn.UseVisualStyleBackColor = false;
+            // 
+            // sales_dataGridView
+            // 
+            this.sales_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.sales_dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.sales_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sales_dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.sales_dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sales_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            this.sales_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sales_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name_sales,
+            this.quintity_sales,
+            this.price_sales,
+            this.discount_sales,
+            this.dateOfSale_sales});
+            this.sales_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sales_dataGridView.DefaultCellStyle = dataGridViewCellStyle22;
+            this.sales_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sales_dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sales_dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.sales_dataGridView.Name = "sales_dataGridView";
+            this.sales_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sales_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            this.sales_dataGridView.RowHeadersWidth = 10;
+            this.sales_dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.sales_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle24;
+            this.sales_dataGridView.Size = new System.Drawing.Size(450, 434);
+            this.sales_dataGridView.TabIndex = 0;
+            // 
+            // name_sales
+            // 
+            this.name_sales.HeaderText = "name";
+            this.name_sales.Name = "name_sales";
+            this.name_sales.Width = 64;
+            // 
+            // quintity_sales
+            // 
+            this.quintity_sales.HeaderText = "quintity";
+            this.quintity_sales.Name = "quintity_sales";
+            this.quintity_sales.Width = 72;
+            // 
+            // price_sales
+            // 
+            this.price_sales.HeaderText = "price";
+            this.price_sales.Name = "price_sales";
+            this.price_sales.Width = 59;
+            // 
+            // discount_sales
+            // 
+            this.discount_sales.HeaderText = "discount";
+            this.discount_sales.Name = "discount_sales";
+            this.discount_sales.Width = 78;
+            // 
+            // dateOfSale_sales
+            // 
+            this.dateOfSale_sales.HeaderText = "date of sale";
+            this.dateOfSale_sales.Name = "dateOfSale_sales";
+            this.dateOfSale_sales.Visible = false;
+            this.dateOfSale_sales.Width = 96;
+            // 
+            // panel_store_data
+            // 
+            this.panel_store_data.Controls.Add(this.panel_buttons_store_data);
+            this.panel_store_data.Controls.Add(this.store_dataGridView);
+            this.panel_store_data.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel_store_data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel_store_data.Location = new System.Drawing.Point(0, 48);
+            this.panel_store_data.Name = "panel_store_data";
+            this.panel_store_data.Size = new System.Drawing.Size(450, 434);
+            this.panel_store_data.TabIndex = 25;
+            this.panel_store_data.Visible = false;
+            // 
+            // panel_buttons_store_data
+            // 
+            this.panel_buttons_store_data.Controls.Add(this.add_to_store_data_btn);
+            this.panel_buttons_store_data.Controls.Add(this.updata_store_data_btn);
+            this.panel_buttons_store_data.Controls.Add(this.delete_store_data_btn);
+            this.panel_buttons_store_data.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel_buttons_store_data.Location = new System.Drawing.Point(0, 399);
+            this.panel_buttons_store_data.Name = "panel_buttons_store_data";
+            this.panel_buttons_store_data.Size = new System.Drawing.Size(450, 35);
+            this.panel_buttons_store_data.TabIndex = 1;
+            // 
+            // add_to_store_data_btn
+            // 
+            this.add_to_store_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.add_to_store_data_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_to_store_data_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_to_store_data_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_to_store_data_btn.Location = new System.Drawing.Point(3, 0);
+            this.add_to_store_data_btn.Name = "add_to_store_data_btn";
+            this.add_to_store_data_btn.Size = new System.Drawing.Size(145, 35);
+            this.add_to_store_data_btn.TabIndex = 25;
+            this.add_to_store_data_btn.Text = "Add";
+            this.add_to_store_data_btn.UseVisualStyleBackColor = false;
+            this.add_to_store_data_btn.Click += new System.EventHandler(this.add_to_store_data_btn_Click);
+            // 
+            // updata_store_data_btn
+            // 
+            this.updata_store_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.updata_store_data_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updata_store_data_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updata_store_data_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.updata_store_data_btn.Location = new System.Drawing.Point(154, 0);
+            this.updata_store_data_btn.Name = "updata_store_data_btn";
+            this.updata_store_data_btn.Size = new System.Drawing.Size(145, 35);
+            this.updata_store_data_btn.TabIndex = 24;
+            this.updata_store_data_btn.Text = "Update";
+            this.updata_store_data_btn.UseVisualStyleBackColor = false;
+            this.updata_store_data_btn.Click += new System.EventHandler(this.updata_store_data_btn_Click);
+            // 
+            // delete_store_data_btn
+            // 
+            this.delete_store_data_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.delete_store_data_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_store_data_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_store_data_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.delete_store_data_btn.Location = new System.Drawing.Point(302, 0);
+            this.delete_store_data_btn.Name = "delete_store_data_btn";
+            this.delete_store_data_btn.Size = new System.Drawing.Size(145, 35);
+            this.delete_store_data_btn.TabIndex = 23;
+            this.delete_store_data_btn.Text = "Delete";
+            this.delete_store_data_btn.UseVisualStyleBackColor = false;
+            this.delete_store_data_btn.Click += new System.EventHandler(this.delete_store_data_btn_Click);
+            // 
+            // store_dataGridView
+            // 
+            this.store_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.store_dataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.store_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.store_dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.store_dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.store_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.store_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.store_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_store,
+            this.name_store,
+            this.description_store,
+            this.quintity_store,
+            this.price_store,
+            this.sales_price_store,
+            this.profit_store,
+            this.dateOfPruchase_store,
+            this.userName_store,
+            this.bill_store});
+            this.store_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.store_dataGridView.DefaultCellStyle = dataGridViewCellStyle14;
+            this.store_dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.store_dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.store_dataGridView.Name = "store_dataGridView";
+            this.store_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.store_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.store_dataGridView.RowHeadersWidth = 10;
+            this.store_dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.store_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.store_dataGridView.Size = new System.Drawing.Size(450, 393);
+            this.store_dataGridView.TabIndex = 0;
+            // 
+            // go_back_home
+            // 
+            this.go_back_home.BackColor = System.Drawing.SystemColors.Control;
+            this.go_back_home.FlatAppearance.BorderSize = 0;
+            this.go_back_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.go_back_home.Image = ((System.Drawing.Image)(resources.GetObject("go_back_home.Image")));
+            this.go_back_home.Location = new System.Drawing.Point(373, 3);
+            this.go_back_home.Name = "go_back_home";
+            this.go_back_home.Size = new System.Drawing.Size(31, 29);
+            this.go_back_home.TabIndex = 24;
+            this.go_back_home.UseVisualStyleBackColor = false;
+            this.go_back_home.Visible = false;
+            this.go_back_home.Click += new System.EventHandler(this.go_back_home_Click);
             // 
             // panel_changePassword
             // 
@@ -358,16 +787,28 @@
             this.panel_old_password.TabIndex = 23;
             this.panel_old_password.Enter += new System.EventHandler(this.panel_old_password_Enter);
             // 
+            // old_password_show
+            // 
+            this.old_password_show.Image = ((System.Drawing.Image)(resources.GetObject("old_password_show.Image")));
+            this.old_password_show.Location = new System.Drawing.Point(15, 11);
+            this.old_password_show.Name = "old_password_show";
+            this.old_password_show.Size = new System.Drawing.Size(24, 24);
+            this.old_password_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.old_password_show.TabIndex = 8;
+            this.old_password_show.TabStop = false;
+            this.old_password_show.Click += new System.EventHandler(this.old_password_show_Click);
+            // 
             // old_password_txt
             // 
             this.old_password_txt.BackColor = System.Drawing.SystemColors.Control;
             this.old_password_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.old_password_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.old_password_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.old_password_txt.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.old_password_txt.Location = new System.Drawing.Point(45, 11);
             this.old_password_txt.Name = "old_password_txt";
             this.old_password_txt.Size = new System.Drawing.Size(370, 23);
             this.old_password_txt.TabIndex = 1;
+            this.old_password_txt.Text = "old password";
             // 
             // label7
             // 
@@ -391,6 +832,17 @@
             this.panel_confirme_new_password.TabIndex = 26;
             this.panel_confirme_new_password.Enter += new System.EventHandler(this.panel_confirme_new_password_Enter);
             // 
+            // confirm_new_password_show
+            // 
+            this.confirm_new_password_show.Image = ((System.Drawing.Image)(resources.GetObject("confirm_new_password_show.Image")));
+            this.confirm_new_password_show.Location = new System.Drawing.Point(15, 11);
+            this.confirm_new_password_show.Name = "confirm_new_password_show";
+            this.confirm_new_password_show.Size = new System.Drawing.Size(24, 24);
+            this.confirm_new_password_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.confirm_new_password_show.TabIndex = 8;
+            this.confirm_new_password_show.TabStop = false;
+            this.confirm_new_password_show.Click += new System.EventHandler(this.confirm_new_password_show_Click);
+            // 
             // new_password_message
             // 
             this.new_password_message.AutoSize = true;
@@ -409,12 +861,12 @@
             this.confirm_new_password_txt.BackColor = System.Drawing.SystemColors.Control;
             this.confirm_new_password_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.confirm_new_password_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirm_new_password_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.confirm_new_password_txt.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.confirm_new_password_txt.Location = new System.Drawing.Point(45, 11);
             this.confirm_new_password_txt.Name = "confirm_new_password_txt";
             this.confirm_new_password_txt.Size = new System.Drawing.Size(370, 23);
             this.confirm_new_password_txt.TabIndex = 5;
-            this.confirm_new_password_txt.UseSystemPasswordChar = true;
+            this.confirm_new_password_txt.Text = "confirm new password";
             // 
             // panel_new_password
             // 
@@ -426,17 +878,28 @@
             this.panel_new_password.TabIndex = 24;
             this.panel_new_password.Enter += new System.EventHandler(this.panel_new_password_Enter);
             // 
+            // new_password_show
+            // 
+            this.new_password_show.Image = ((System.Drawing.Image)(resources.GetObject("new_password_show.Image")));
+            this.new_password_show.Location = new System.Drawing.Point(15, 11);
+            this.new_password_show.Name = "new_password_show";
+            this.new_password_show.Size = new System.Drawing.Size(24, 24);
+            this.new_password_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.new_password_show.TabIndex = 8;
+            this.new_password_show.TabStop = false;
+            this.new_password_show.Click += new System.EventHandler(this.new_password_show_Click);
+            // 
             // new_password_txt
             // 
             this.new_password_txt.BackColor = System.Drawing.SystemColors.Control;
             this.new_password_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.new_password_txt.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.new_password_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.new_password_txt.ForeColor = System.Drawing.Color.LightSteelBlue;
             this.new_password_txt.Location = new System.Drawing.Point(45, 11);
             this.new_password_txt.Name = "new_password_txt";
             this.new_password_txt.Size = new System.Drawing.Size(370, 23);
             this.new_password_txt.TabIndex = 5;
-            this.new_password_txt.UseSystemPasswordChar = true;
+            this.new_password_txt.Text = "new password";
             // 
             // changePassword_btn
             // 
@@ -450,6 +913,7 @@
             this.changePassword_btn.TabIndex = 22;
             this.changePassword_btn.Text = "Change";
             this.changePassword_btn.UseVisualStyleBackColor = false;
+            this.changePassword_btn.Click += new System.EventHandler(this.changePassword_btn_Click);
             // 
             // exit_home_btn
             // 
@@ -465,197 +929,130 @@
             this.exit_home_btn.UseVisualStyleBackColor = true;
             this.exit_home_btn.Click += new System.EventHandler(this.exit_home_btn_Click);
             // 
-            // old_password_show
+            // id_store
             // 
-            this.old_password_show.Image = ((System.Drawing.Image)(resources.GetObject("old_password_show.Image")));
-            this.old_password_show.Location = new System.Drawing.Point(15, 11);
-            this.old_password_show.Name = "old_password_show";
-            this.old_password_show.Size = new System.Drawing.Size(24, 24);
-            this.old_password_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.old_password_show.TabIndex = 8;
-            this.old_password_show.TabStop = false;
-            this.old_password_show.Click += new System.EventHandler(this.old_password_show_Click);
+            this.id_store.HeaderText = "id";
+            this.id_store.Name = "id_store";
+            this.id_store.ReadOnly = true;
+            this.id_store.Width = 42;
             // 
-            // confirm_new_password_show
+            // name_store
             // 
-            this.confirm_new_password_show.Image = ((System.Drawing.Image)(resources.GetObject("confirm_new_password_show.Image")));
-            this.confirm_new_password_show.Location = new System.Drawing.Point(15, 11);
-            this.confirm_new_password_show.Name = "confirm_new_password_show";
-            this.confirm_new_password_show.Size = new System.Drawing.Size(24, 24);
-            this.confirm_new_password_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.confirm_new_password_show.TabIndex = 8;
-            this.confirm_new_password_show.TabStop = false;
-            this.confirm_new_password_show.Click += new System.EventHandler(this.confirm_new_password_show_Click);
+            this.name_store.HeaderText = "name";
+            this.name_store.Name = "name_store";
+            this.name_store.Width = 64;
             // 
-            // new_password_show
+            // description_store
             // 
-            this.new_password_show.Image = ((System.Drawing.Image)(resources.GetObject("new_password_show.Image")));
-            this.new_password_show.Location = new System.Drawing.Point(15, 11);
-            this.new_password_show.Name = "new_password_show";
-            this.new_password_show.Size = new System.Drawing.Size(24, 24);
-            this.new_password_show.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.new_password_show.TabIndex = 8;
-            this.new_password_show.TabStop = false;
-            this.new_password_show.Click += new System.EventHandler(this.new_password_show_Click);
+            this.description_store.HeaderText = "description";
+            this.description_store.Name = "description_store";
+            this.description_store.Width = 91;
             // 
-            // go_to_procurement_btn
+            // quintity_store
             // 
-            this.go_to_procurement_btn.Image = global::project_final.Properties.Resources.procurement;
-            this.go_to_procurement_btn.Location = new System.Drawing.Point(143, 129);
-            this.go_to_procurement_btn.Name = "go_to_procurement_btn";
-            this.go_to_procurement_btn.Size = new System.Drawing.Size(75, 75);
-            this.go_to_procurement_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.go_to_procurement_btn.TabIndex = 31;
-            this.go_to_procurement_btn.TabStop = false;
+            this.quintity_store.HeaderText = "quintity";
+            this.quintity_store.Name = "quintity_store";
+            this.quintity_store.Width = 72;
             // 
-            // go_to_changePassword_btn
+            // price_store
             // 
-            this.go_to_changePassword_btn.Image = global::project_final.Properties.Resources.change_password;
-            this.go_to_changePassword_btn.Location = new System.Drawing.Point(62, 129);
-            this.go_to_changePassword_btn.Name = "go_to_changePassword_btn";
-            this.go_to_changePassword_btn.Size = new System.Drawing.Size(75, 75);
-            this.go_to_changePassword_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.go_to_changePassword_btn.TabIndex = 30;
-            this.go_to_changePassword_btn.TabStop = false;
-            this.go_to_changePassword_btn.Click += new System.EventHandler(this.go_to_changePassword_btn_Click);
+            this.price_store.HeaderText = "price";
+            this.price_store.Name = "price_store";
+            this.price_store.Width = 59;
             // 
-            // go_to_store_btn
+            // sales_price_store
             // 
-            this.go_to_store_btn.Image = global::project_final.Properties.Resources.store;
-            this.go_to_store_btn.Location = new System.Drawing.Point(62, 28);
-            this.go_to_store_btn.Name = "go_to_store_btn";
-            this.go_to_store_btn.Size = new System.Drawing.Size(75, 75);
-            this.go_to_store_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.go_to_store_btn.TabIndex = 29;
-            this.go_to_store_btn.TabStop = false;
+            this.sales_price_store.HeaderText = "sales price";
+            this.sales_price_store.Name = "sales_price_store";
+            this.sales_price_store.Width = 87;
             // 
-            // go_to_sales_btn
+            // profit_store
             // 
-            this.go_to_sales_btn.Image = global::project_final.Properties.Resources.sale;
-            this.go_to_sales_btn.Location = new System.Drawing.Point(143, 28);
-            this.go_to_sales_btn.Name = "go_to_sales_btn";
-            this.go_to_sales_btn.Size = new System.Drawing.Size(75, 75);
-            this.go_to_sales_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.go_to_sales_btn.TabIndex = 28;
-            this.go_to_sales_btn.TabStop = false;
+            this.profit_store.HeaderText = "profit";
+            this.profit_store.Name = "profit_store";
+            this.profit_store.Width = 59;
             // 
-            // pictureBox4
+            // dateOfPruchase_store
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(15, 11);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
+            this.dateOfPruchase_store.HeaderText = "date of pruchase";
+            this.dateOfPruchase_store.Name = "dateOfPruchase_store";
+            this.dateOfPruchase_store.ReadOnly = true;
+            this.dateOfPruchase_store.Width = 126;
             // 
-            // password_show_login_logo
+            // userName_store
             // 
-            this.password_show_login_logo.Location = new System.Drawing.Point(15, 11);
-            this.password_show_login_logo.Name = "password_show_login_logo";
-            this.password_show_login_logo.Size = new System.Drawing.Size(24, 24);
-            this.password_show_login_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.password_show_login_logo.TabIndex = 8;
-            this.password_show_login_logo.TabStop = false;
+            this.userName_store.DataPropertyName = "user_name";
+            this.userName_store.HeaderText = "user name";
+            this.userName_store.Name = "userName_store";
+            this.userName_store.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.userName_store.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.userName_store.Width = 88;
             // 
-            // pictureBox2
+            // bill_store
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(191, 433);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(11, 11);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(70, 39);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // go_back_home
-            // 
-            this.go_back_home.BackColor = System.Drawing.SystemColors.Control;
-            this.go_back_home.FlatAppearance.BorderSize = 0;
-            this.go_back_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.go_back_home.Image = ((System.Drawing.Image)(resources.GetObject("go_back_home.Image")));
-            this.go_back_home.Location = new System.Drawing.Point(364, 0);
-            this.go_back_home.Name = "go_back_home";
-            this.go_back_home.Size = new System.Drawing.Size(40, 40);
-            this.go_back_home.TabIndex = 24;
-            this.go_back_home.UseVisualStyleBackColor = false;
-            this.go_back_home.Visible = false;
-            this.go_back_home.Click += new System.EventHandler(this.go_back_home_Click);
+            this.bill_store.DataPropertyName = "bills";
+            this.bill_store.HeaderText = "bill";
+            this.bill_store.Name = "bill_store";
+            this.bill_store.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.bill_store.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.bill_store.Width = 46;
             // 
             // Home_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 530);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_data_grid_view_side);
+            this.Controls.Add(this.panel_button_side);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home_Page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Store_Manegemnt";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel_button_side.ResumeLayout(false);
+            this.panel_button_side.PerformLayout();
             this.panel_home_buttons.ResumeLayout(false);
             this.panel_home_buttons.PerformLayout();
-            this.login_panel.ResumeLayout(false);
-            this.login_panel.PerformLayout();
-            this.panel_user_login.ResumeLayout(false);
-            this.panel_user_login.PerformLayout();
-            this.panel_password_login.ResumeLayout(false);
-            this.panel_password_login.PerformLayout();
-            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.go_to_bills_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.go_to_changePassword_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.go_to_store_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.go_to_sales_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_copy_writes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_app_logo)).EndInit();
+            this.panel_data_grid_view_side.ResumeLayout(false);
+            this.panel_bills_data.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bills_dataGridView)).EndInit();
+            this.panel_sales_data.ResumeLayout(false);
+            this.panel_buttons_sales_data.ResumeLayout(false);
+            this.panel_buttons_sales_data.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_dataGridView)).EndInit();
+            this.panel_store_data.ResumeLayout(false);
+            this.panel_buttons_store_data.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.store_dataGridView)).EndInit();
             this.panel_changePassword.ResumeLayout(false);
             this.panel_changePassword.PerformLayout();
             this.panel_old_password.ResumeLayout(false);
             this.panel_old_password.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.old_password_show)).EndInit();
             this.panel_confirme_new_password.ResumeLayout(false);
             this.panel_confirme_new_password.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.confirm_new_password_show)).EndInit();
             this.panel_new_password.ResumeLayout(false);
             this.panel_new_password.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.old_password_show)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.confirm_new_password_show)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.new_password_show)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.go_to_procurement_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.go_to_changePassword_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.go_to_store_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.go_to_sales_btn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.password_show_login_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_button_side;
+        private System.Windows.Forms.PictureBox pictureBox_copy_writes;
+        private System.Windows.Forms.Label copy_write_lbl;
+        private System.Windows.Forms.Label title_of_app;
+        private System.Windows.Forms.PictureBox pictureBox_app_logo;
+        private System.Windows.Forms.Panel panel_data_grid_view_side;
         public System.Windows.Forms.Button exit_home_btn;
-        private System.Windows.Forms.Panel login_panel;
-        public System.Windows.Forms.Label title_of_lo_in_fotm;
-        public System.Windows.Forms.Panel panel_user_login;
-        public System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.TextBox user_name_login_txt;
-        public System.Windows.Forms.Button btn_go_to_create;
-        public System.Windows.Forms.Panel panel_password_login;
-        public System.Windows.Forms.PictureBox password_show_login_logo;
-        public System.Windows.Forms.TextBox password_login_txt;
-        public System.Windows.Forms.Button login_btn;
         private System.Windows.Forms.Panel panel_changePassword;
         public System.Windows.Forms.Panel panel_old_password;
         public System.Windows.Forms.PictureBox old_password_show;
@@ -673,13 +1070,51 @@
         private System.Windows.Forms.Label new_password_message;
         private System.Windows.Forms.Panel panel_home_buttons;
         private System.Windows.Forms.Label changePassword;
-        private System.Windows.Forms.Label procurement;
+        private System.Windows.Forms.Label bills;
         private System.Windows.Forms.Label Sales;
         private System.Windows.Forms.Label store;
-        private System.Windows.Forms.PictureBox go_to_procurement_btn;
+        private System.Windows.Forms.PictureBox go_to_bills_btn;
         private System.Windows.Forms.PictureBox go_to_changePassword_btn;
         private System.Windows.Forms.PictureBox go_to_store_btn;
         private System.Windows.Forms.PictureBox go_to_sales_btn;
         private System.Windows.Forms.Button go_back_home;
+        private System.Windows.Forms.Panel panel_bills_data;
+        private System.Windows.Forms.DataGridView bills_dataGridView;
+        private System.Windows.Forms.Panel panel_sales_data;
+        private System.Windows.Forms.Panel panel_buttons_sales_data;
+        private System.Windows.Forms.Label date_of_sales_lbl;
+        private System.Windows.Forms.Label datebill;
+        public System.Windows.Forms.Button add_to_sales_data_btn;
+        private System.Windows.Forms.Label totale_price_lbl;
+        public System.Windows.Forms.Button updata_sales_data_btn;
+        private System.Windows.Forms.Label totalePrice_lbl;
+        public System.Windows.Forms.Button delete_sales_data_btn;
+        private System.Windows.Forms.DataGridView sales_dataGridView;
+        private System.Windows.Forms.Panel panel_store_data;
+        private System.Windows.Forms.Panel panel_buttons_store_data;
+        public System.Windows.Forms.Button add_to_store_data_btn;
+        public System.Windows.Forms.Button updata_store_data_btn;
+        public System.Windows.Forms.Button delete_store_data_btn;
+        private System.Windows.Forms.DataGridView store_dataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quintity_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discount_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quintity_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discount_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn description_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quintity_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sales_price_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn profit_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfPruchase_store;
+        private System.Windows.Forms.DataGridViewComboBoxColumn userName_store;
+        private System.Windows.Forms.DataGridViewComboBoxColumn bill_store;
     }
 }
