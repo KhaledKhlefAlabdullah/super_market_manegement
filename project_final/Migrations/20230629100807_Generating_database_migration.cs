@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace project_final.Migrations
 {
-    public partial class firstMigration : Migration
+    public partial class Generating_database_migration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,8 @@ namespace project_final.Migrations
                 {
                     billId = table.Column<string>(nullable: false),
                     data_of_sale = table.Column<DateTime>(nullable: false),
-                    amount = table.Column<double>(nullable: false)
+                    amount = table.Column<double>(nullable: false),
+                    billType = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -52,10 +53,11 @@ namespace project_final.Migrations
                     id = table.Column<string>(nullable: false),
                     product_name = table.Column<string>(nullable: false),
                     quentity = table.Column<int>(nullable: false),
+                    price = table.Column<double>(nullable: false),
                     discount = table.Column<double>(nullable: false),
                     data_of_sale = table.Column<DateTime>(nullable: false),
                     userId = table.Column<string>(nullable: false),
-                    billId = table.Column<string>(nullable: true)
+                    billId = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -65,7 +67,7 @@ namespace project_final.Migrations
                         column: x => x.billId,
                         principalTable: "Bill",
                         principalColumn: "billId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_sales_users_userId",
                         column: x => x.userId,

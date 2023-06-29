@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using project_final.Models;
 
 namespace project_final.Migrations
 {
     [DbContext(typeof(SuperMarketDBcontext))]
-    partial class SuperMarketDBcontextModelSnapshot : ModelSnapshot
+    [Migration("20230629142449_add_quantity_column_to_bill_migration")]
+    partial class add_quantity_column_to_bill_migration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

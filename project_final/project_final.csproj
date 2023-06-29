@@ -277,9 +277,13 @@
     <Compile Include="Login_CreateAccount.Designer.cs">
       <DependentUpon>Login_CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20230626194139_firstMigration.cs" />
-    <Compile Include="Migrations\20230626194139_firstMigration.designer.cs">
-      <DependentUpon>20230626194139_firstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\20230629100807_Generating_database_migration.cs" />
+    <Compile Include="Migrations\20230629100807_Generating_database_migration.designer.cs">
+      <DependentUpon>20230629100807_Generating_database_migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20230629142449_add_quantity_column_to_bill_migration.cs" />
+    <Compile Include="Migrations\20230629142449_add_quantity_column_to_bill_migration.designer.cs">
+      <DependentUpon>20230629142449_add_quantity_column_to_bill_migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\SuperMarketDBcontextModelSnapshot.cs" />
     <Compile Include="Models\Bill.cs" />

@@ -17,7 +17,7 @@ namespace project_final.Models
         public DbSet<Bill> Bill { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Data Source=KHALED\SQLEXPRESS;Initial Catalog=super_market;Integrated Security=True;TrustServerCertificate=True");
+            options.UseSqlServer(@"Data Source=khaled\SQLEXPRESS;Initial Catalog=super_market;Integrated Security=True;TrustServerCertificate=True");
         }
 
     }

@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,6 +19,7 @@ namespace project_final
 {
     public partial class Login_CreateAccount : Form
     {
+        Thread thread;
         public Login_CreateAccount()
         {
             InitializeComponent();
@@ -204,6 +206,10 @@ namespace project_final
                 show_password_confirm_create.Image = Resources._lock;
             }
         }
+        private void oper_home_page()
+        {
+            Application.Run(new Home_Page());
+        }
         // login by user name and password
         private void login_btn_Click(object sender, EventArgs e)
         {
@@ -214,16 +220,17 @@ namespace project_final
                 using (var dbContext = new SuperMarketDBcontext())
                 {
                     // get users in database and check if the user name and password is courrect and if exist
-                    var user= dbContext.users.FirstOrDefault(u => u.Name == user_name_login_txt.Text);
+                    var user = dbContext.users.FirstOrDefault(u => u.Name == user_name_login_txt.Text);
                     if (user_name_login_txt.Text.Length <= 2)
                         user_name_login_errorMessage.Visible = true;
                     if (password_login_txt.Text.GetHashCode().ToString() == user.password)
                     {
                         // close login widow and open home window
                         this.Hide();
-                        Home_Page home_page = new Home_Page();
                         InternalVariples.userId = user.userId;
-                        home_page.Show();
+                        thread = new Thread(oper_home_page);
+                        thread.SetApartmentState(ApartmentState.STA);
+                        thread.Start();
                         MessageBox.Show("welcom you are logined", "Alert", MessageBoxButtons.OK);
                     }
                     else
@@ -234,13 +241,13 @@ namespace project_final
                     }
                 }
             }
-            catch(Exception ex)
-            { 
+            catch (Exception ex)
+            {
                 // show message box with error tetx
                 MessageBox.Show($"Cannot connect to database {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
+
         // show error message if user name in login not correct
         private void user_name_login_txt_TextChanged(object sender, EventArgs e)
         {
