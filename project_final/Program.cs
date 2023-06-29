@@ -16,8 +16,8 @@ namespace project_final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Login_CreateAccount());
-            Application.Run(new Home_Page());
+            Application.Run(new Login_CreateAccount());
+            //Application.Run(new Home_Page());
         }
         
     }

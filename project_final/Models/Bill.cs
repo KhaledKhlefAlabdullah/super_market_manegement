@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace project_final.Models
 {
+    public enum BillType
+    {
+        sale,
+        purchase
+    }
     internal class Bill
     {
         [Required(ErrorMessage = "the bill id required")]
@@ -14,6 +19,10 @@ namespace project_final.Models
         public DateTime data_of_sale { get; set; }
         [Required(ErrorMessage ="the amount is required")]
         public double amount { get; set; }
+        [Required(ErrorMessage ="the quantity is required")]
+        public int quantity { get; set; }
+        [Required(ErrorMessage ="the bill type is required")]
+        public BillType billType { get; set; }
         public ICollection<Sales> sales { get; set; }
     }
 }

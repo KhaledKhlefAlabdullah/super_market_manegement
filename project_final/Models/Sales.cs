@@ -17,12 +17,18 @@ namespace project_final.Models
         public string product_name { get; set; }
         [Required(ErrorMessage ="the quintity is required")]
         public int quentity { get; set; }
+        [Required(ErrorMessage = "the price is required")]
+        public double price { get; set; }
         public double discount { get; set; }
         public DateTime data_of_sale { get; set; }
         [Required(ErrorMessage = "the user id is required")]
         public string userId { get; set; }
         [ForeignKey(nameof(userId))]
         public User user { get; set; }
+        [Required(ErrorMessage = "the bill id is required")]
+        public string billId { get; set; }
+        [ForeignKey(nameof(billId))]
+        public Bill bill { get; set; }
 
     }
 }

@@ -9,6 +9,6 @@ namespace project_final.Models
     internal class InternalVariples
     {
         public static string userId = "";
-        public static int rowIndex = -1;
+        public static double total_price = 0;
     }
 }

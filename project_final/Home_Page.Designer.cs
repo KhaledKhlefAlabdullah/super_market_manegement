@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Page));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_button_side = new System.Windows.Forms.Panel();
             this.panel_home_buttons = new System.Windows.Forms.Panel();
             this.changePassword = new System.Windows.Forms.Label();
@@ -57,12 +57,16 @@
             this.pictureBox_app_logo = new System.Windows.Forms.PictureBox();
             this.panel_data_grid_view_side = new System.Windows.Forms.Panel();
             this.panel_bills_data = new System.Windows.Forms.Panel();
+            this.delete_bill_btn = new System.Windows.Forms.Button();
+            this.update_bill_btn = new System.Windows.Forms.Button();
+            this.add_bill_btn = new System.Windows.Forms.Button();
             this.bills_dataGridView = new System.Windows.Forms.DataGridView();
-            this.name_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quintity_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.discount_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mount_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantity_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfSale_bill = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type_bill = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.go_to_bill_details = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel_sales_data = new System.Windows.Forms.Panel();
             this.panel_buttons_sales_data = new System.Windows.Forms.Panel();
             this.date_of_sales_lbl = new System.Windows.Forms.Label();
@@ -73,10 +77,12 @@
             this.totalePrice_lbl = new System.Windows.Forms.Label();
             this.delete_sales_data_btn = new System.Windows.Forms.Button();
             this.sales_dataGridView = new System.Windows.Forms.DataGridView();
+            this.id_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quintity_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.discount_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price_after_discount_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfSale_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel_store_data = new System.Windows.Forms.Panel();
             this.panel_buttons_store_data = new System.Windows.Forms.Panel();
@@ -84,23 +90,6 @@
             this.updata_store_data_btn = new System.Windows.Forms.Button();
             this.delete_store_data_btn = new System.Windows.Forms.Button();
             this.store_dataGridView = new System.Windows.Forms.DataGridView();
-            this.go_back_home = new System.Windows.Forms.Button();
-            this.panel_changePassword = new System.Windows.Forms.Panel();
-            this.confiram_new_password_message = new System.Windows.Forms.Label();
-            this.old_password_message = new System.Windows.Forms.Label();
-            this.panel_old_password = new System.Windows.Forms.Panel();
-            this.old_password_show = new System.Windows.Forms.PictureBox();
-            this.old_password_txt = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel_confirme_new_password = new System.Windows.Forms.Panel();
-            this.confirm_new_password_show = new System.Windows.Forms.PictureBox();
-            this.new_password_message = new System.Windows.Forms.Label();
-            this.confirm_new_password_txt = new System.Windows.Forms.TextBox();
-            this.panel_new_password = new System.Windows.Forms.Panel();
-            this.new_password_show = new System.Windows.Forms.PictureBox();
-            this.new_password_txt = new System.Windows.Forms.TextBox();
-            this.changePassword_btn = new System.Windows.Forms.Button();
-            this.exit_home_btn = new System.Windows.Forms.Button();
             this.id_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.description_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -111,6 +100,23 @@
             this.dateOfPruchase_store = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userName_store = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.bill_store = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.go_back_home = new System.Windows.Forms.Button();
+            this.panel_changePassword = new System.Windows.Forms.Panel();
+            this.confiram_new_password_message = new System.Windows.Forms.Label();
+            this.old_password_message = new System.Windows.Forms.Label();
+            this.panel_old_password = new System.Windows.Forms.Panel();
+            this.old_password_show = new System.Windows.Forms.PictureBox();
+            this.old_password_txt = new System.Windows.Forms.TextBox();
+            this.change_password_lbl = new System.Windows.Forms.Label();
+            this.panel_confirme_new_password = new System.Windows.Forms.Panel();
+            this.confirm_new_password_show = new System.Windows.Forms.PictureBox();
+            this.new_password_message = new System.Windows.Forms.Label();
+            this.confirm_new_password_txt = new System.Windows.Forms.TextBox();
+            this.panel_new_password = new System.Windows.Forms.Panel();
+            this.new_password_show = new System.Windows.Forms.PictureBox();
+            this.new_password_txt = new System.Windows.Forms.TextBox();
+            this.changePassword_btn = new System.Windows.Forms.Button();
+            this.exit_home_btn = new System.Windows.Forms.Button();
             this.panel_button_side.SuspendLayout();
             this.panel_home_buttons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.go_to_bills_btn)).BeginInit();
@@ -318,6 +324,9 @@
             // 
             // panel_bills_data
             // 
+            this.panel_bills_data.Controls.Add(this.delete_bill_btn);
+            this.panel_bills_data.Controls.Add(this.update_bill_btn);
+            this.panel_bills_data.Controls.Add(this.add_bill_btn);
             this.panel_bills_data.Controls.Add(this.bills_dataGridView);
             this.panel_bills_data.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel_bills_data.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
@@ -327,6 +336,48 @@
             this.panel_bills_data.TabIndex = 31;
             this.panel_bills_data.Visible = false;
             // 
+            // delete_bill_btn
+            // 
+            this.delete_bill_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.delete_bill_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.delete_bill_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.delete_bill_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.delete_bill_btn.Location = new System.Drawing.Point(299, 369);
+            this.delete_bill_btn.Name = "delete_bill_btn";
+            this.delete_bill_btn.Size = new System.Drawing.Size(148, 35);
+            this.delete_bill_btn.TabIndex = 21;
+            this.delete_bill_btn.Text = "delete";
+            this.delete_bill_btn.UseVisualStyleBackColor = false;
+            this.delete_bill_btn.Click += new System.EventHandler(this.delete_bill_btn_Click);
+            // 
+            // update_bill_btn
+            // 
+            this.update_bill_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.update_bill_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update_bill_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_bill_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.update_bill_btn.Location = new System.Drawing.Point(154, 369);
+            this.update_bill_btn.Name = "update_bill_btn";
+            this.update_bill_btn.Size = new System.Drawing.Size(142, 35);
+            this.update_bill_btn.TabIndex = 20;
+            this.update_bill_btn.Text = "update";
+            this.update_bill_btn.UseVisualStyleBackColor = false;
+            this.update_bill_btn.Click += new System.EventHandler(this.update_bill_btn_Click);
+            // 
+            // add_bill_btn
+            // 
+            this.add_bill_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.add_bill_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add_bill_btn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_bill_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_bill_btn.Location = new System.Drawing.Point(3, 369);
+            this.add_bill_btn.Name = "add_bill_btn";
+            this.add_bill_btn.Size = new System.Drawing.Size(148, 35);
+            this.add_bill_btn.TabIndex = 19;
+            this.add_bill_btn.Text = "add";
+            this.add_bill_btn.UseVisualStyleBackColor = false;
+            this.add_bill_btn.Click += new System.EventHandler(this.add_bill_btn_Click);
+            // 
             // bills_dataGridView
             // 
             this.bills_dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
@@ -334,79 +385,93 @@
             this.bills_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bills_dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.bills_dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bills_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bills_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.bills_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bills_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name_bill,
-            this.quintity_bill,
-            this.price_bill,
-            this.discount_bill,
-            this.dateOfSale_bill});
+            this.id_bill,
+            this.mount_bill,
+            this.quantity_bill,
+            this.dateOfSale_bill,
+            this.type_bill,
+            this.go_to_bill_details});
             this.bills_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.bills_dataGridView.DefaultCellStyle = dataGridViewCellStyle18;
-            this.bills_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.bills_dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.bills_dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.bills_dataGridView.Location = new System.Drawing.Point(0, 0);
             this.bills_dataGridView.Name = "bills_dataGridView";
             this.bills_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bills_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bills_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.bills_dataGridView.RowHeadersWidth = 10;
             this.bills_dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.bills_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle20;
-            this.bills_dataGridView.Size = new System.Drawing.Size(450, 450);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.bills_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.bills_dataGridView.Size = new System.Drawing.Size(450, 367);
             this.bills_dataGridView.TabIndex = 0;
+            this.bills_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bills_dataGridView_CellContentClick);
             // 
-            // name_bill
+            // id_bill
             // 
-            this.name_bill.HeaderText = "name";
-            this.name_bill.Name = "name_bill";
-            this.name_bill.Width = 64;
+            this.id_bill.FillWeight = 42F;
+            this.id_bill.HeaderText = "id";
+            this.id_bill.Name = "id_bill";
+            this.id_bill.ReadOnly = true;
+            this.id_bill.Visible = false;
+            this.id_bill.Width = 23;
             // 
-            // quintity_bill
+            // mount_bill
             // 
-            this.quintity_bill.HeaderText = "quintity";
-            this.quintity_bill.Name = "quintity_bill";
-            this.quintity_bill.Width = 72;
+            this.mount_bill.HeaderText = "mount";
+            this.mount_bill.Name = "mount_bill";
+            this.mount_bill.Width = 67;
             // 
-            // price_bill
+            // quantity_bill
             // 
-            this.price_bill.HeaderText = "price";
-            this.price_bill.Name = "price_bill";
-            this.price_bill.Width = 59;
-            // 
-            // discount_bill
-            // 
-            this.discount_bill.HeaderText = "discount";
-            this.discount_bill.Name = "discount_bill";
-            this.discount_bill.Width = 78;
+            this.quantity_bill.HeaderText = "quantity";
+            this.quantity_bill.Name = "quantity_bill";
+            this.quantity_bill.Width = 78;
             // 
             // dateOfSale_bill
             // 
             this.dateOfSale_bill.HeaderText = "date of sale";
             this.dateOfSale_bill.Name = "dateOfSale_bill";
             this.dateOfSale_bill.Width = 96;
+            // 
+            // type_bill
+            // 
+            this.type_bill.HeaderText = "type";
+            this.type_bill.Name = "type_bill";
+            this.type_bill.Width = 38;
+            // 
+            // go_to_bill_details
+            // 
+            this.go_to_bill_details.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.go_to_bill_details.HeaderText = "details";
+            this.go_to_bill_details.Name = "go_to_bill_details";
+            this.go_to_bill_details.Text = "details";
+            this.go_to_bill_details.ToolTipText = "details";
+            this.go_to_bill_details.UseColumnTextForButtonValue = true;
+            this.go_to_bill_details.Width = 48;
             // 
             // panel_sales_data
             // 
@@ -441,7 +506,7 @@
             this.date_of_sales_lbl.BackColor = System.Drawing.SystemColors.Control;
             this.date_of_sales_lbl.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_of_sales_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.date_of_sales_lbl.Location = new System.Drawing.Point(339, 47);
+            this.date_of_sales_lbl.Location = new System.Drawing.Point(300, 47);
             this.date_of_sales_lbl.Name = "date_of_sales_lbl";
             this.date_of_sales_lbl.Size = new System.Drawing.Size(0, 19);
             this.date_of_sales_lbl.TabIndex = 39;
@@ -452,7 +517,7 @@
             this.datebill.BackColor = System.Drawing.SystemColors.Control;
             this.datebill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datebill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.datebill.Location = new System.Drawing.Point(242, 47);
+            this.datebill.Location = new System.Drawing.Point(202, 47);
             this.datebill.Name = "datebill";
             this.datebill.Size = new System.Drawing.Size(94, 19);
             this.datebill.TabIndex = 38;
@@ -470,6 +535,7 @@
             this.add_to_sales_data_btn.TabIndex = 25;
             this.add_to_sales_data_btn.Text = "Add";
             this.add_to_sales_data_btn.UseVisualStyleBackColor = false;
+            this.add_to_sales_data_btn.Click += new System.EventHandler(this.add_to_sales_data_btn_Click);
             // 
             // totale_price_lbl
             // 
@@ -494,6 +560,7 @@
             this.updata_sales_data_btn.TabIndex = 24;
             this.updata_sales_data_btn.Text = "Update";
             this.updata_sales_data_btn.UseVisualStyleBackColor = false;
+            this.updata_sales_data_btn.Click += new System.EventHandler(this.updata_sales_data_btn_Click);
             // 
             // totalePrice_lbl
             // 
@@ -519,6 +586,7 @@
             this.delete_sales_data_btn.TabIndex = 23;
             this.delete_sales_data_btn.Text = "Delete";
             this.delete_sales_data_btn.UseVisualStyleBackColor = false;
+            this.delete_sales_data_btn.Click += new System.EventHandler(this.delete_sales_data_btn_Click);
             // 
             // sales_dataGridView
             // 
@@ -527,49 +595,57 @@
             this.sales_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sales_dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.sales_dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.sales_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sales_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.sales_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sales_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_sales,
             this.name_sales,
             this.quintity_sales,
             this.price_sales,
             this.discount_sales,
+            this.price_after_discount_sales,
             this.dateOfSale_sales});
             this.sales_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.sales_dataGridView.DefaultCellStyle = dataGridViewCellStyle22;
-            this.sales_dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sales_dataGridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.sales_dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.sales_dataGridView.Location = new System.Drawing.Point(0, 0);
             this.sales_dataGridView.Name = "sales_dataGridView";
             this.sales_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sales_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sales_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.sales_dataGridView.RowHeadersWidth = 10;
             this.sales_dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.sales_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle24;
-            this.sales_dataGridView.Size = new System.Drawing.Size(450, 434);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.sales_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.sales_dataGridView.Size = new System.Drawing.Size(450, 367);
             this.sales_dataGridView.TabIndex = 0;
+            // 
+            // id_sales
+            // 
+            this.id_sales.HeaderText = "id";
+            this.id_sales.Name = "id_sales";
+            this.id_sales.ReadOnly = true;
+            this.id_sales.Width = 42;
             // 
             // name_sales
             // 
@@ -595,11 +671,18 @@
             this.discount_sales.Name = "discount_sales";
             this.discount_sales.Width = 78;
             // 
+            // price_after_discount_sales
+            // 
+            this.price_after_discount_sales.HeaderText = "after discount";
+            this.price_after_discount_sales.Name = "price_after_discount_sales";
+            this.price_after_discount_sales.ReadOnly = true;
+            this.price_after_discount_sales.Width = 106;
+            // 
             // dateOfSale_sales
             // 
             this.dateOfSale_sales.HeaderText = "date of sale";
             this.dateOfSale_sales.Name = "dateOfSale_sales";
-            this.dateOfSale_sales.Visible = false;
+            this.dateOfSale_sales.ReadOnly = true;
             this.dateOfSale_sales.Width = 96;
             // 
             // panel_store_data
@@ -674,14 +757,14 @@
             this.store_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.store_dataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.store_dataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.store_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.store_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.store_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.store_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_store,
@@ -695,32 +778,100 @@
             this.userName_store,
             this.bill_store});
             this.store_dataGridView.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.store_dataGridView.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.store_dataGridView.DefaultCellStyle = dataGridViewCellStyle10;
             this.store_dataGridView.GridColor = System.Drawing.SystemColors.ControlDarkDark;
             this.store_dataGridView.Location = new System.Drawing.Point(0, 0);
             this.store_dataGridView.Name = "store_dataGridView";
             this.store_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.store_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(148)))), ((int)(((byte)(200)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.store_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.store_dataGridView.RowHeadersWidth = 10;
             this.store_dataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.store_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.store_dataGridView.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.store_dataGridView.Size = new System.Drawing.Size(450, 393);
             this.store_dataGridView.TabIndex = 0;
+            // 
+            // id_store
+            // 
+            this.id_store.HeaderText = "id";
+            this.id_store.Name = "id_store";
+            this.id_store.ReadOnly = true;
+            this.id_store.Width = 42;
+            // 
+            // name_store
+            // 
+            this.name_store.HeaderText = "name";
+            this.name_store.Name = "name_store";
+            this.name_store.Width = 64;
+            // 
+            // description_store
+            // 
+            this.description_store.HeaderText = "description";
+            this.description_store.Name = "description_store";
+            this.description_store.Width = 91;
+            // 
+            // quintity_store
+            // 
+            this.quintity_store.HeaderText = "quintity";
+            this.quintity_store.Name = "quintity_store";
+            this.quintity_store.Width = 72;
+            // 
+            // price_store
+            // 
+            this.price_store.HeaderText = "price";
+            this.price_store.Name = "price_store";
+            this.price_store.Width = 59;
+            // 
+            // sales_price_store
+            // 
+            this.sales_price_store.HeaderText = "sales price";
+            this.sales_price_store.Name = "sales_price_store";
+            this.sales_price_store.Width = 87;
+            // 
+            // profit_store
+            // 
+            this.profit_store.HeaderText = "profit";
+            this.profit_store.Name = "profit_store";
+            this.profit_store.Width = 59;
+            // 
+            // dateOfPruchase_store
+            // 
+            this.dateOfPruchase_store.HeaderText = "date of pruchase";
+            this.dateOfPruchase_store.Name = "dateOfPruchase_store";
+            this.dateOfPruchase_store.ReadOnly = true;
+            this.dateOfPruchase_store.Width = 126;
+            // 
+            // userName_store
+            // 
+            this.userName_store.DataPropertyName = "user_name";
+            this.userName_store.HeaderText = "user name";
+            this.userName_store.Name = "userName_store";
+            this.userName_store.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.userName_store.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.userName_store.Width = 88;
+            // 
+            // bill_store
+            // 
+            this.bill_store.DataPropertyName = "bills";
+            this.bill_store.HeaderText = "bill";
+            this.bill_store.Name = "bill_store";
+            this.bill_store.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.bill_store.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.bill_store.Width = 46;
             // 
             // go_back_home
             // 
@@ -741,7 +892,7 @@
             this.panel_changePassword.Controls.Add(this.confiram_new_password_message);
             this.panel_changePassword.Controls.Add(this.old_password_message);
             this.panel_changePassword.Controls.Add(this.panel_old_password);
-            this.panel_changePassword.Controls.Add(this.label7);
+            this.panel_changePassword.Controls.Add(this.change_password_lbl);
             this.panel_changePassword.Controls.Add(this.panel_confirme_new_password);
             this.panel_changePassword.Controls.Add(this.panel_new_password);
             this.panel_changePassword.Controls.Add(this.changePassword_btn);
@@ -810,16 +961,16 @@
             this.old_password_txt.TabIndex = 1;
             this.old_password_txt.Text = "old password";
             // 
-            // label7
+            // change_password_lbl
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.label7.Location = new System.Drawing.Point(5, 12);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(313, 40);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Change Password";
+            this.change_password_lbl.AutoSize = true;
+            this.change_password_lbl.Font = new System.Drawing.Font("Century Gothic", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.change_password_lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.change_password_lbl.Location = new System.Drawing.Point(5, 12);
+            this.change_password_lbl.Name = "change_password_lbl";
+            this.change_password_lbl.Size = new System.Drawing.Size(313, 40);
+            this.change_password_lbl.TabIndex = 21;
+            this.change_password_lbl.Text = "Change Password";
             // 
             // panel_confirme_new_password
             // 
@@ -929,74 +1080,6 @@
             this.exit_home_btn.UseVisualStyleBackColor = true;
             this.exit_home_btn.Click += new System.EventHandler(this.exit_home_btn_Click);
             // 
-            // id_store
-            // 
-            this.id_store.HeaderText = "id";
-            this.id_store.Name = "id_store";
-            this.id_store.ReadOnly = true;
-            this.id_store.Width = 42;
-            // 
-            // name_store
-            // 
-            this.name_store.HeaderText = "name";
-            this.name_store.Name = "name_store";
-            this.name_store.Width = 64;
-            // 
-            // description_store
-            // 
-            this.description_store.HeaderText = "description";
-            this.description_store.Name = "description_store";
-            this.description_store.Width = 91;
-            // 
-            // quintity_store
-            // 
-            this.quintity_store.HeaderText = "quintity";
-            this.quintity_store.Name = "quintity_store";
-            this.quintity_store.Width = 72;
-            // 
-            // price_store
-            // 
-            this.price_store.HeaderText = "price";
-            this.price_store.Name = "price_store";
-            this.price_store.Width = 59;
-            // 
-            // sales_price_store
-            // 
-            this.sales_price_store.HeaderText = "sales price";
-            this.sales_price_store.Name = "sales_price_store";
-            this.sales_price_store.Width = 87;
-            // 
-            // profit_store
-            // 
-            this.profit_store.HeaderText = "profit";
-            this.profit_store.Name = "profit_store";
-            this.profit_store.Width = 59;
-            // 
-            // dateOfPruchase_store
-            // 
-            this.dateOfPruchase_store.HeaderText = "date of pruchase";
-            this.dateOfPruchase_store.Name = "dateOfPruchase_store";
-            this.dateOfPruchase_store.ReadOnly = true;
-            this.dateOfPruchase_store.Width = 126;
-            // 
-            // userName_store
-            // 
-            this.userName_store.DataPropertyName = "user_name";
-            this.userName_store.HeaderText = "user name";
-            this.userName_store.Name = "userName_store";
-            this.userName_store.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.userName_store.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.userName_store.Width = 88;
-            // 
-            // bill_store
-            // 
-            this.bill_store.DataPropertyName = "bills";
-            this.bill_store.HeaderText = "bill";
-            this.bill_store.Name = "bill_store";
-            this.bill_store.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.bill_store.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.bill_store.Width = 46;
-            // 
             // Home_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1057,7 +1140,7 @@
         public System.Windows.Forms.Panel panel_old_password;
         public System.Windows.Forms.PictureBox old_password_show;
         public System.Windows.Forms.TextBox old_password_txt;
-        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label change_password_lbl;
         public System.Windows.Forms.Panel panel_confirme_new_password;
         public System.Windows.Forms.PictureBox confirm_new_password_show;
         public System.Windows.Forms.TextBox confirm_new_password_txt;
@@ -1096,16 +1179,6 @@
         public System.Windows.Forms.Button updata_store_data_btn;
         public System.Windows.Forms.Button delete_store_data_btn;
         private System.Windows.Forms.DataGridView store_dataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name_bill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quintity_bill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price_bill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn discount_bill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_bill;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name_sales;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quintity_sales;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price_sales;
-        private System.Windows.Forms.DataGridViewTextBoxColumn discount_sales;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_sales;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_store;
         private System.Windows.Forms.DataGridViewTextBoxColumn name_store;
         private System.Windows.Forms.DataGridViewTextBoxColumn description_store;
@@ -1116,5 +1189,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfPruchase_store;
         private System.Windows.Forms.DataGridViewComboBoxColumn userName_store;
         private System.Windows.Forms.DataGridViewComboBoxColumn bill_store;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quintity_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discount_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_after_discount_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_sales;
+        public System.Windows.Forms.Button delete_bill_btn;
+        public System.Windows.Forms.Button update_bill_btn;
+        public System.Windows.Forms.Button add_bill_btn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mount_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantity_bill;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_bill;
+        private System.Windows.Forms.DataGridViewComboBoxColumn type_bill;
+        private System.Windows.Forms.DataGridViewButtonColumn go_to_bill_details;
     }
 }

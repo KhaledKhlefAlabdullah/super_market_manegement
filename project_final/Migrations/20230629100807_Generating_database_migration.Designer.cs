@@ -10,8 +10,8 @@ using project_final.Models;
 namespace project_final.Migrations
 {
     [DbContext(typeof(SuperMarketDBcontext))]
-    [Migration("20230626194139_firstMigration")]
-    partial class firstMigration
+    [Migration("20230629100807_Generating_database_migration")]
+    partial class Generating_database_migration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,6 +28,9 @@ namespace project_final.Migrations
 
                     b.Property<double>("amount")
                         .HasColumnType("float");
+
+                    b.Property<int>("billType")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("data_of_sale")
                         .HasColumnType("datetime2");
@@ -57,12 +60,16 @@ namespace project_final.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("billId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("data_of_sale")
                         .HasColumnType("datetime2");
 
                     b.Property<double>("discount")
+                        .HasColumnType("float");
+
+                    b.Property<double>("price")
                         .HasColumnType("float");
 
                     b.Property<string>("product_name")
@@ -94,7 +101,7 @@ namespace project_final.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<DateTime>("datr_of_purchase")
+                    b.Property<DateTime>("date_of_purchase")
                         .HasColumnType("datetime2");
 
                     b.Property<double>("price_of_purchase")
@@ -172,9 +179,11 @@ namespace project_final.Migrations
 
             modelBuilder.Entity("project_final.Models.Sales", b =>
                 {
-                    b.HasOne("project_final.Models.Bill", null)
+                    b.HasOne("project_final.Models.Bill", "bill")
                         .WithMany("sales")
-                        .HasForeignKey("billId");
+                        .HasForeignKey("billId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("project_final.Models.User", "user")
                         .WithMany("sales")
