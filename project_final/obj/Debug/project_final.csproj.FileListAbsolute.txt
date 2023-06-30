@@ -134,3 +134,5 @@ D:\CORSSES\View Programing\projects\project_final - Copy\project_final\obj\Debug
 D:\CORSSES\View Programing\projects\project_final - Copy\project_final\obj\Debug\project_final.exe
 D:\CORSSES\View Programing\projects\project_final - Copy\project_final\obj\Debug\project_final.pdb
 D:\CORSSES\View Programing\projects\project_final - Copy\project_final\bin\Debug\project_final.pdb
+D:\CORSSES\View Programing\projects\project_final - Copy\project_final\bin\Debug\BCrypt.Net-Next.dll
+D:\CORSSES\View Programing\projects\project_final - Copy\project_final\bin\Debug\BCrypt.Net-Next.xml

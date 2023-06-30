@@ -69,6 +69,7 @@
             this.btn_login_from_create = new System.Windows.Forms.Button();
             this.btn_create_and_login = new System.Windows.Forms.Button();
             this.exit_login_btn = new System.Windows.Forms.Button();
+            this.testtest = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,6 +91,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel1.Controls.Add(this.testtest);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -573,6 +575,19 @@
             this.exit_login_btn.UseVisualStyleBackColor = true;
             this.exit_login_btn.Click += new System.EventHandler(this.exit_login_btn_Click_1);
             // 
+            // testtest
+            // 
+            this.testtest.BackColor = System.Drawing.SystemColors.Control;
+            this.testtest.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.testtest.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.testtest.ForeColor = System.Drawing.Color.LightSteelBlue;
+            this.testtest.Location = new System.Drawing.Point(6, 273);
+            this.testtest.Multiline = true;
+            this.testtest.Name = "testtest";
+            this.testtest.Size = new System.Drawing.Size(294, 132);
+            this.testtest.TabIndex = 23;
+            this.testtest.Text = "user name";
+            // 
             // Login_CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -656,6 +671,7 @@
         private System.Windows.Forms.Label user_name_create_errorMessage;
         private System.Windows.Forms.Label confirm_password_create_errorMessage;
         private System.Windows.Forms.Label password_create_errorMessage;
+        public System.Windows.Forms.TextBox testtest;
     }
 }
 

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Page));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -41,6 +40,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home_Page));
             this.panel_button_side = new System.Windows.Forms.Panel();
             this.panel_home_buttons = new System.Windows.Forms.Panel();
             this.changePassword = new System.Windows.Forms.Label();
@@ -117,6 +117,7 @@
             this.new_password_txt = new System.Windows.Forms.TextBox();
             this.changePassword_btn = new System.Windows.Forms.Button();
             this.exit_home_btn = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.PictureBox();
             this.panel_button_side.SuspendLayout();
             this.panel_home_buttons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.go_to_bills_btn)).BeginInit();
@@ -141,11 +142,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.confirm_new_password_show)).BeginInit();
             this.panel_new_password.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.new_password_show)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logout_btn)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_button_side
             // 
             this.panel_button_side.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.panel_button_side.Controls.Add(this.logout_btn);
             this.panel_button_side.Controls.Add(this.panel_home_buttons);
             this.panel_button_side.Controls.Add(this.pictureBox_copy_writes);
             this.panel_button_side.Controls.Add(this.copy_write_lbl);
@@ -1080,6 +1083,17 @@
             this.exit_home_btn.UseVisualStyleBackColor = true;
             this.exit_home_btn.Click += new System.EventHandler(this.exit_home_btn_Click);
             // 
+            // logout_btn
+            // 
+            this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
+            this.logout_btn.Location = new System.Drawing.Point(11, 11);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(26, 24);
+            this.logout_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.logout_btn.TabIndex = 36;
+            this.logout_btn.TabStop = false;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
+            // 
             // Home_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1123,6 +1137,7 @@
             this.panel_new_password.ResumeLayout(false);
             this.panel_new_password.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.new_password_show)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logout_btn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1205,5 +1220,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfSale_bill;
         private System.Windows.Forms.DataGridViewComboBoxColumn type_bill;
         private System.Windows.Forms.DataGridViewButtonColumn go_to_bill_details;
+        private System.Windows.Forms.PictureBox logout_btn;
     }
 }

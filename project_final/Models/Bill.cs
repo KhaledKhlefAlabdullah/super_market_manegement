@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace project_final.Models
 {
-    public enum BillType
-    {
-        sale,
-        purchase
-    }
+     public enum BillType
+        {
+            sale=0,
+            purchase=1
+        }
     internal class Bill
     {
+       
         [Required(ErrorMessage = "the bill id required")]
         public string billId { get; set; }
         public DateTime data_of_sale { get; set; }
