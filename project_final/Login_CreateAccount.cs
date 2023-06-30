@@ -14,12 +14,12 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BCrypt.Net;
 
 namespace project_final
 {
     public partial class Login_CreateAccount : Form
     {
-        Thread thread;
         public Login_CreateAccount()
         {
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace project_final
         // close app button
         private void exit_login_btn_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
         // make selected color on password fialde in login UI
         private void panel_password_login_Enter(object sender, EventArgs e)
@@ -206,48 +206,44 @@ namespace project_final
                 show_password_confirm_create.Image = Resources._lock;
             }
         }
-        private void oper_home_page()
-        {
-            Application.Run(new Home_Page());
-        }
         // login by user name and password
         private void login_btn_Click(object sender, EventArgs e)
         {
-            // handeling exciptions
+            // handeling exception
             try
             {
-                // using dbContext to connect with database
                 using (var dbContext = new SuperMarketDBcontext())
                 {
-                    // get users in database and check if the user name and password is courrect and if exist
-                    var user = dbContext.users.FirstOrDefault(u => u.Name == user_name_login_txt.Text);
-                    if (user_name_login_txt.Text.Length <= 2)
-                        user_name_login_errorMessage.Visible = true;
-                    if (password_login_txt.Text.GetHashCode().ToString() == user.password)
+                    // get all users
+                    List<User> users = dbContext.users.ToList();
+                    bool isUserFound = false;
+                    // check if ther user by entrying value
+                    foreach (var user in users)
                     {
-                        // close login widow and open home window
-                        this.Hide();
-                        InternalVariples.userId = user.userId;
-                        thread = new Thread(oper_home_page);
-                        thread.SetApartmentState(ApartmentState.STA);
-                        thread.Start();
-                        MessageBox.Show("welcom you are logined", "Alert", MessageBoxButtons.OK);
+                        if (user.Name == user_name_login_txt.Text.Trim() && BCrypt.Net.BCrypt.Verify(password_login_txt.Text, user.password))
+                        {
+                            isUserFound = true;
+                            this.Hide();
+                            InternalVariples.userId = user.userId;
+                            Home_Page homePage = new Home_Page();
+                            homePage.Show();
+                            MessageBox.Show("You are logged in", "Welcome!", MessageBoxButtons.OK);
+                            break;
+                        }
                     }
-                    else
+                    // view error message if dont found the user
+                    if (!isUserFound)
                     {
-                        // view error message on password faild
                         password_login_errorMessage.Visible = true;
-                        MessageBox.Show("there are error in your password or your name", "Error", MessageBoxButtons.OK);
+                        MessageBox.Show("There is no user with this name or the password is incorrect", "Error", MessageBoxButtons.OK);
                     }
                 }
             }
             catch (Exception ex)
             {
-                // show message box with error tetx
-                MessageBox.Show($"Cannot connect to database {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Cannot connect to the database: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         // show error message if user name in login not correct
         private void user_name_login_txt_TextChanged(object sender, EventArgs e)
         {
@@ -285,7 +281,8 @@ namespace project_final
                               select users.userId;
                     // check if id not in ids to remain unique
                     while (true)
-                    {   string idg = Guid.NewGuid().ToString();
+                    {   
+                        string idg = Guid.NewGuid().ToString();
                         if (!ids.Contains(idg))
                         {
                             id = idg;
@@ -294,7 +291,7 @@ namespace project_final
                     }
                     // check if user name is correct
                     if (user_name_txt_create.Text.Length > 2)
-                        name= user_name_txt_create.Text;
+                        name= user_name_txt_create.Text.Trim();
                     else
                         user_name_create_errorMessage.Visible = true;
                     // check if password and confirm password is corrct and if they are same
@@ -303,7 +300,7 @@ namespace project_final
                     bool password_containsSpecialCharacters = Regex.IsMatch(password, "[#@,*]");
                     bool confirm_password_containsSpecialCharacters = Regex.IsMatch(confirm_password, "[#@,*]");
                     if (password.Length > 8 && password_containsSpecialCharacters && confirm_password == password)
-                        pass = password;
+                        pass = password.Trim();
                     else
                         password_create_errorMessage.Visible = true;
                     if (confirm_password != password)
@@ -313,7 +310,7 @@ namespace project_final
                     {
                         User user = new User
                         {
-                            userId = id+DateTime.Now.ToString(), Name = name, password = pass.GetHashCode().ToString()
+                            userId = id+DateTime.Now.ToString(), Name = name, password = BCrypt.Net.BCrypt.HashPassword(pass) 
                         };
                         dbContext.users.Add(user);
                         dbContext.SaveChanges();

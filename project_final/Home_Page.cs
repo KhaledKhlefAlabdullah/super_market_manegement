@@ -11,6 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static project_final.Models.Bill;
 
 namespace project_final
 {
@@ -23,8 +24,7 @@ namespace project_final
         // close home page button
         private void exit_home_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-
+            Application.Exit();
         }
         // go to UI change password
         private void go_to_changePassword_btn_Click(object sender, EventArgs e)
@@ -196,7 +196,7 @@ namespace project_final
         {
             // if type sale go to sale dataGridView 
             // if type purcahse goto store dataGridView
-            if (type ==BillType.purchase || type==null)
+            if (type == BillType.purchase || type == null)
             {
                 panel_store_data.Visible = true;
                 go_back_home.Visible = true;
@@ -318,14 +318,16 @@ namespace project_final
                 // using dbContext to connet to database
                 using (var dbContext = new SuperMarketDBcontext())
                 {
+                    bills_dataGridView.Rows.Clear();
                     // Get all selected rows
                     List<Bill> bills=dbContext.Bill.ToList();
                     var bill_type_compobox = (DataGridViewComboBoxColumn)bills_dataGridView.Columns["type_bill"];
-                    //bill_type_compobox.DisplayMember = "Name"; // Display member will be the enum member name
-                    //bill_type_compobox.ValueMember = "Value"; // Value member will be the enum member value
+                    bill_type_compobox.DisplayMember = "Name";
+                    bill_type_compobox.ValueMember= "Value";
                     bill_type_compobox.DataSource = Enum.GetValues(typeof(BillType))
-                                                       .Cast<BillType>().ToList();
-                    bills_dataGridView.Rows.Clear();
+                                   .Cast<BillType>()
+                                   .Select(en => new { Name = en.ToString(), Value = en })
+                                   .ToList(); ;
                     foreach (var item in bills)
                     {
                         bills_dataGridView.Rows.Add();
@@ -805,12 +807,14 @@ namespace project_final
                             quantity = quantity,
                             billType = (BillType)selectedRow.Cells["type_bill"].Value,
                         };
+                        dbContext.Bill.Add(bill);
                     }
                     else
                     {
                         MessageBox.Show($"the failds amount and quantity must not be empty or zero.", "Error", MessageBoxButtons.OK);
                         return;
                     }
+                    dbContext.SaveChanges();
                     bills_dataGridView.RefreshEdit();
                 }
                 // Clear the selection
@@ -928,6 +932,13 @@ namespace project_final
                 else
                     view_store_data(selectedRow.Cells["id_bill"].Value.ToString(), (BillType)selectedRow.Cells["type_bill"].Value);
             }
+        }
+        // logout button
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_CreateAccount lc = new Login_CreateAccount();
+            lc.Show();
         }
     }
 }
